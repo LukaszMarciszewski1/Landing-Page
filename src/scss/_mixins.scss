@@ -1,0 +1,83 @@
+@import "_variables";
+
+@mixin container {
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.85);
+    background-color: $contentPlace;
+    border-radius: 20px;
+}
+
+@mixin shadowItem {
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+@mixin shadowLoad {
+    -webkit-box-shadow: inset 0px 0px 15px -4px #000000;
+    box-shadow: inset 0px 0px 15px -4px #000000;
+}
+
+@mixin players-desc {
+    padding: 10px 0;
+    border-right: 1px solid $border;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btnRacing {
+    width: 170px;
+    background-color: transparent;
+    border: 2px solid green;
+    font-size: 24px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    opacity: .8;
+    transition: .2s;
+    letter-spacing: 0.07rem;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin txt-place {
+    background-color: $txtPlace;
+    -webkit-box-shadow: inset 0px 0px 6px -2px #000000;
+    box-shadow: inset 0px 0px 6px -2px #000000;
+    border: 1px solid $border;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+@mixin btnToDoList {
+    height: 40px;
+    width: 125px;
+    background: none;
+    border: 1px solid $itemBg;
+    margin-left: 10px;
+    @include shadowItem;
+    border-radius: 7px;
+}
+
+@mixin settings-btn {
+    @include shadowItem;
+    border-radius: 12px;
+    border: 1px solid $borderSettingsBtn;
+    background-color: $loadBg;
+    padding: 12px 20px;
+}
+
+@mixin absoluteCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
