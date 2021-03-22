@@ -4,3 +4,41 @@
     border: 0;
     box-sizing: border-box;
   }
+  body{
+    background-color: $backgroundColorDark;
+    color: $colorLight;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  button{
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    &:focus{
+      outline: none;
+      background: rgb(37, 37, 39);
+      background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
+      color: $colorLightGreen;
+    }
+    &:hover{
+      background: rgb(37, 37, 39);
+      background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
+      color: $colorLightGreen;
+    }
+}
+p{
+  font-size: .9rem;
+  color: $colorTxt;
+  font-weight: 300;
+  line-height: 1.7rem;
+}
+a{
+  font-size: 1rem;
+  color: $colorLight;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}

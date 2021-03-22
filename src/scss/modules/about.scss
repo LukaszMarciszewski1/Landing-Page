@@ -1,4 +1,26 @@
-.about__h1{
-    color: $fontColorYellow;
+.about {
+    @include btn-shadow;
+    width: 350px;
+    height: 100%;
+    justify-self: flex-start;
+    padding:50px 30px;
+    position: relative;
+}
+
+.about__name {
     font-weight: 600;
+    font-size: 2rem;
+    color: $colorLightGreen;
+}
+
+.about__position {
+    margin-top: 15px;
+    margin-bottom:40px;
+    font-weight: 400;
+}
+
+#copyright{
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
 }

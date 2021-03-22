@@ -1,6 +1,9 @@
-@import "reset";
 @import "_variables";
+@import "_mixins";
 @import "fonts";
-@import "modules/main.scss";
-@import "modules/header.scss";
+@import "reset";
+@import "button";
+@import "modules/wrapper.scss";
 @import "modules/about.scss";
+@import "modules/nav.scss";
+@import "modules/main.scss";

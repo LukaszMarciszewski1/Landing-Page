@@ -5,7 +5,7 @@
   "author": "Łukasz Marciszewski",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/LukaszMarciszewski1/Portfolio"
   },
   "main": "index.js",
   "scripts": {

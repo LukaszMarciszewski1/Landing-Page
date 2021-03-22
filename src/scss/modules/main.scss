@@ -1,8 +1,84 @@
-.main {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    color: $fontColorLight;
-    background-color: $backgroundColor;
+.main{
+    overflow: hidden;
+    flex-grow: 1;
+    height: 100%;
     display: flex;
+    position: relative;
+}
+.projects{
+    @include btn-shadow;
+    width: 100%;
+    height: auto;
+    margin:0 35px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: darken(grey, 15%);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: darken(grey, 30%);
+    }
+}
+.project{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 30px;
+}
+.project__img-container{
+    height: 100%;
+    width: 650px;
+    img{
+        @include btn-shadow;
+        width: 100%;
+        height: auto;
+    }
+}
+.project__about{
+    width: 300px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.project__name{
+
+}
+.project__text{
+    margin: 25px 0;
+    font-size: 14px;
+}
+.project__links{
+    display: flex;
+}
+.link{
+    padding: 0 20px;
+    opacity: .8;
+    &:last-child{
+        border-right: none;
+        padding: 0 0 0 20px;
+    }
+    &:first-child{
+        padding: 0 20px 0 0;
+        position: relative;
+        &::before{
+           content: '';
+           position: absolute;
+           right: 0;
+           top: 0;
+           height: 100%;
+           border-right: 1px solid $colorLight;
+        }
+    }
+    &:hover{
+        opacity: 1;
+    }
+    &:hover::before{
+        opacity: 0.8;
+    }
 }
