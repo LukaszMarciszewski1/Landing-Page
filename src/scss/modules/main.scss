@@ -4,18 +4,18 @@
     height: 100%;
     display: flex;
     position: relative;
+    flex-direction: column;
 }
 
 //projects--------------->
 .projects{
-    @include btn-shadow;
-    width: 100%;
-    height: auto;
+    // @include btn-shadow;
+    max-width: 100%;
+    min-height: 100%;
     margin:0 35px;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    // display:none;
     &::-webkit-scrollbar {
         width: 8px;
         background-color: darken(grey, 15%);
@@ -87,16 +87,15 @@
 //skills--------------->
 
 .skills{
-    @include btn-shadow;
-    width: 100%;
-    height: auto;
+    // @include btn-shadow;
+    max-width: 100%;
+    min-height: 100%;
     margin:0 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px;
-    display: none;
 }
 .graphic-programs{
 margin-top: 40px;
@@ -141,4 +140,8 @@ margin-top: 40px;
           font-size: .7rem;
         }
     }
+}
+
+.main-content{
+    transition: .7s ease;
 }
