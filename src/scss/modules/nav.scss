@@ -1,5 +1,5 @@
 .nav{
-    width: 260px;
+    width: 250px;
     height: 100%;
     align-self: flex-end;
     position: relative;
@@ -14,12 +14,16 @@
 }
 .nav__item{
     @include btn-shadow;
+    @include flex-center;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
     width: 100%;
-    height: calc(100% / 3);
+    height: calc(97% / 3);
     margin-bottom: 10px;
-    background-color: $backgroundColorDark;
+    background-color: darken($backgroundColorDark, 5%);
     color: $colorLight;
-    // border-radius: 10px 0 0 10px;
+    font-family: 'Roboto Mono', monospace;
+    
     &:last-child{
         margin-bottom: 0;
     }

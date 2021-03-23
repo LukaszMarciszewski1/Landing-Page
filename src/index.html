@@ -12,117 +12,153 @@
 <body>
     <div id="wrapper">
         <section class="about">
-            <h1 class="about__name">Łukasz <br> Marciszeski</h1>
-            <h3 class="about__position">Front end developer</h3>
-            <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, in
-                corporis?
-                Dolor, culpa itaque nihil fuga eos laboriosam distinctio officia. Cumque quas corrupti soluta quidem
-                placeat saepe, ea sint harum? <br>
-                Quisquam distinctio maxime, blanditiis magnam recusandae adipisci labore. Cum quaerat officiis, vero
-                accusantium repellat ullam blanditiis culpa nostrum rerum.</p>
-            <p id="copyright"> &copy; 2021 Łukasz Marciszewski</p>
+            <div class="about__text-container">
+                <h1 class="about__name">Łukasz <br> Marciszeski</h1>
+                <h3 class="about__position">Front end developer</h3>
+                <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, in
+                    corporis?
+                    Dolor, culpa itaque nihil fuga eos laboriosam distinctio officia. Cumque quas corrupti soluta quidem
+                    placeat saepe, ea sint harum? <br>
+                    Quisquam distinctio maxime, blanditiis magnam recusandae adipisci labore. Cum quaerat officiis, vero
+                    accusantium repellat ullam blanditiis culpa nostrum rerum.</p>
+            </div>
+            <div class="about__links">
+                <a href="https://github.com/LukaszMarciszewski1">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </div>
+            <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p>
         </section>
         <section class="main">
-            <div class="projects main-content">
-                <div class="project">
-                    <div class="project__img-container"><img src="images/Kalkulator.jpg" alt="aplikacja dla drukarni">
-                    </div>
-                    <div class="project__about">
-                        <h3 class="project__name">Aplikacja dla drukarni</h3>
-                        <p class="project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero
-                            suscipit laboriosam, iste autem accusamus? Soluta asperiores sint, maxime magni, laudantium
-                            tempore corporis quo pariatur vero, inventore numquam a illo.</p>
-                        <div class="project__links">
-                            <a href="" class="link">github</a>
-                            <a href="https://elegant-leavitt-677695.netlify.app/" target="_blank" class="link">link do
-                                strony</a>
+            <div class="main__container">
+                <div class="projects main-content" id="projekty">
+                    <div class="project">
+                        <div class="project__img-container"><img src="images/Kalkulator.jpg"
+                                alt="aplikacja dla drukarni">
+                        </div>
+                        <div class="project__about">
+                            <h2 class="project__name">Aplikacja dla drukarni</h2>
+                            <p class="project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero
+                                suscipit laboriosam, iste autem accusamus? Soluta asperiores sint, maxime magni,
+                                laudantium
+                                tempore corporis quo pariatur vero, inventore numquam a illo.</p>
+                            <div class="project__links">
+                                <a href="" class="link">github</a>
+                                <a href="https://cennik-druku.netlify.app/" target="_blank" class="link">link do
+                                    strony</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project">
-                    <div class="project__img-container"><img src="images/Olejnik1.jpg" alt="aplikacja dla drukarni">
-                    </div>
-                    <div class="project__about">
-                        <h3 class="project__name">Aplikacja dla drukarni</h3>
-                        <p class="project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero
-                            suscipit laboriosam, iste autem accusamus? Soluta asperiores sint, maxime magni, laudantium
-                            tempore corporis quo pariatur vero, inventore numquam a illo.</p>
-                        <div class="project__links">
-                            <a href="" class="link">github</a>
-                            <a href="http://www.olejnik.com.pl/index.html" target="_blank" class="link">link do
-                                strony</a>
+                    <div class="project">
+                        <div class="project__img-container"><img src="images/Olejnik1.jpg" alt="aplikacja dla drukarni">
+                        </div>
+                        <div class="project__about">
+                            <h2 class="project__name">Olejnik</h2>
+                            <p class="project__text">Strona internetowa stworzona dla firmy Olejnik. <br>
+                                Użyte technologie: HTML5, SCSS, JavaScript, jQuery.</p>
+                            <div class="project__links">
+                                <a href="" class="link">github</a>
+                                <a href="http://www.olejnik.com.pl/index.html" target="_blank" class="link">link do
+                                    strony</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project">
-                    <div class="project__img-container"><img src="images/RLM.jpg" alt="aplikacja dla drukarni">
-                    </div>
-                    <div class="project__about">
-                        <h3 class="project__name">Aplikacja dla drukarni</h3>
-                        <p class="project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero
-                            suscipit laboriosam, iste autem accusamus? Soluta asperiores sint, maxime magni, laudantium
-                            tempore corporis quo pariatur vero, inventore numquam a illo.</p>
-                        <div class="project__links">
-                            <a href="" class="link">github</a>
-                            <a href="https://rlm-stoper.netlify.app/" target="_blank" class="link">link do strony</a>
+                    <div class="project">
+                        <div class="project__img-container"><img src="images/RLM.jpg" alt="aplikacja dla drukarni">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills main-content">
-                <div class="technology">
-                    <h2 class="skills__title">Technologie</h2>
-                    <div class="skills__container">
-                        <div class="skills__item">
-                            <h3 class="skills__name">HTML5</h3>
-                        </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">CSS3</h3>
-                        </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">Sass</h3>
-                        </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">JavaScript</h3>
-                        </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">Webpack</h3>
-                        </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">WordPress</h3>
-                        </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">React <br><small>(podstawy)</small></h3>
-                        </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">Node.js<br><small>(podstawy)</h3>
+                        <div class="project__about">
+                            <h2 class="project__name">Rajdowa liga mazowsza</h2>
+                            <p class="project__text">Aplikacja stworzona dla Rajdowej ligi mazowsza. <br>
+                                Podstawowe załóżenia: odliczanie czasu do startu wyścigu, dodawanie zawodnikow, </p>
+                            <div class="project__links">
+                                <a href="" class="link" title="Github">github</a>
+                                <a href="https://rlm-stoper.netlify.app/" target="_blank" class="link">link do
+                                    strony</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="graphic-programs">
-                    <h2 class="skills__title">Programy graficzne</h2>
-                    <div class="skills__container">
-                        <div class="skills__item">
-                            <h3 class="skills__name">HTML5</h3>
+                <div class="skills main-content" id="umiejętności">
+                    <div class="technology">
+                        <h2 class="skills__title">Technologie</h2>
+                        <div class="skills__container">
+                            <div class="skills__item">
+                                <h3 class="skills__name">HTML5</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">CSS3</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">Sass</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">JavaScript</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">Webpack</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">WordPress</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">React <br><small>(podstawy)</small></h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">Node.js<br><small>(podstawy)</h3>
+                            </div>
                         </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">CSS3</h3>
+                    </div>
+                    <div class="graphic-programs">
+                        <h2 class="skills__title">Programy graficzne</h2>
+                        <div class="skills__container">
+                            <div class="skills__item">
+                                <h3 class="skills__name">Photoshop</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">Illustrator</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">InDesign</h3>
+                            </div>
+                            <div class="skills__item">
+                                <h3 class="skills__name">Corel DRAW</h3>
+                            </div>
                         </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">Sass</h3>
-                        </div>
-                        <div class="skills__item">
-                            <h3 class="skills__name">JavaScript</h3>
-                        </div>
+                    </div>
+                </div>
+
+                <div class="contact main-content " id="kontakt">
+                    <div class="contact-container">
+                        <form name="contact-form" id="contact-form" method="post" action="">
+                            <div class="textarea">
+                                <label for="contact-name">Name :</label>
+                                <input type="text" name="contact-name" id="contact-name" value="" required>
+                            </div>
+                            <div class="textarea">
+                                <label for="contact-email">Email :</label>
+                                <input type="email" name="contact-email" id="contact-email" value="" required>
+                            </div>
+                            <div class="textarea">
+                                <label for="contact-project">Message :</label>
+                                <textarea type="email" name="contact-project" id="contact-project" rows="6" value=""
+                                    required>
+                                        </textarea>
+                            </div>
+                            <button type="submit" name="contact-submit" id="contact-submit"
+                                class="send wow fadeInUp">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
         <nav class="nav">
             <div class="nav__container">
-                <button class="nav__item item nav__item--active">Projekty</button>
-                <button class="nav__item item">Umiejętności</button>
-                <button class="nav__item">Kontakt</button>
+                <a href="#projekty" class="nav__item item nav__item--active">Projekty</a>
+                <a href="#umiejętności" class="nav__item item">Umiejętności</a>
+                <a href="#kontakt" class="nav__item">Kontakt</a>
             </div>
         </nav>
     </div>

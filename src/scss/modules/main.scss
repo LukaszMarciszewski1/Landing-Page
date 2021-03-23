@@ -2,20 +2,41 @@
     overflow: hidden;
     flex-grow: 1;
     height: 100%;
+}
+.main__container{
+    width: 100%;
+    height: 100%;
     display: flex;
     position: relative;
     flex-direction: column;
-}
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+        width: 8px;
+        background-color: darken(grey, 15%);
+    }
 
+    &::-webkit-scrollbar-thumb {
+        display: none;
+        background-color: darken(grey, 30%);
+    }
+}
+.main-content{
+    transition: .7s ease;
+    margin:0 3% 3%;
+    background-color: darken($backgroundColorDark, 5%);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
 //projects--------------->
 .projects{
-    // @include btn-shadow;
+    scroll-behavior: smooth;
+    @include btn-shadow;
     max-width: 100%;
-    min-height: 100%;
-    margin:0 35px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
     &::-webkit-scrollbar {
         width: 8px;
         background-color: darken(grey, 15%);
@@ -49,17 +70,22 @@
     justify-content: center;
     flex-direction: column;
 }
+.project__name{
+    font-size: 1.2rem;
+}
 
 .project__text{
-    margin: 25px 0;
-    font-size: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid $colorLine;
+    // font-size: 14px;
 }
 .project__links{
     display: flex;
+    padding: 15px 0;
 }
 .link{
     padding: 0 20px;
-    opacity: .8;
+    opacity: .9;
     &:last-child{
         border-right: none;
         padding: 0 0 0 20px;
@@ -73,7 +99,7 @@
            right: 0;
            top: 0;
            height: 100%;
-           border-right: 1px solid $colorLight;
+           border-right: 1px solid $colorLine;
         }
     }
     &:hover{
@@ -87,10 +113,10 @@
 //skills--------------->
 
 .skills{
-    // @include btn-shadow;
+    scroll-behavior: smooth;
+    @include btn-shadow;
     max-width: 100%;
-    min-height: 100%;
-    margin:0 35px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,9 +129,9 @@ margin-top: 40px;
 .skills__title{
     margin-bottom: 30px;
     margin-left: 40px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     position: relative;
-    color: $colorTxt;
+    // color: $colorTxt;
     &::before{
         content: '';
         position:absolute;
@@ -122,14 +148,15 @@ margin-top: 40px;
     gap: 1rem;
 }
 .skills__item{
-    // margin-right: 1rem;
-    // margin-bottom: 1rem;
     width: 210px;
-    height: 180px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $skillsItemBg;  
+    color: $colorTxt;
+    // background-color: $skillsItemBg;  
+    border: 1px solid $colorLine;
+    font-size: .9rem;
     &:last-child{
         margin-right: 0;
         margin-bottom: 0;
@@ -142,6 +169,4 @@ margin-top: 40px;
     }
 }
 
-.main-content{
-    transition: .7s ease;
-}
+
