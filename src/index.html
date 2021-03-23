@@ -26,15 +26,19 @@
                 <a href="https://github.com/LukaszMarciszewski1">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
-                <a href="">
+                <a href="mailto:lmarciszewski1@gmail.com">
                     <ion-icon name="mail-outline"></ion-icon>
                 </a>
             </div>
             <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p>
         </section>
-        <section class="main">
+        <main class="main">
             <div class="main__container">
-                <div class="projects main-content" id="projekty">
+                <section class="intro main-content" id="start">
+                    <img src="images/intro.jpg" alt="">
+                </section>
+
+                <section class="projects main-content" id="projekty">
                     <div class="project">
                         <div class="project__img-container"><img src="images/Kalkulator.jpg"
                                 alt="aplikacja dla drukarni">
@@ -80,8 +84,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skills main-content" id="umiejętności">
+                </section>
+
+                <section class="skills main-content" id="umiejętności">
                     <div class="technology">
                         <h2 class="skills__title">Technologie</h2>
                         <div class="skills__container">
@@ -128,9 +133,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="contact main-content " id="kontakt">
+                </section>
+                
+                <section class="contact main-content" id="kontakt">
                     <div class="contact-container">
                         <form name="contact-form" id="contact-form" method="post" action="">
                             <div class="textarea">
@@ -151,11 +156,12 @@
                                 class="send wow fadeInUp">Send Message</button>
                         </form>
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
+        </main>
         <nav class="nav">
             <div class="nav__container">
+                <a href="#start" class="nav__item item nav__item--active">Start</a>
                 <a href="#projekty" class="nav__item item nav__item--active">Projekty</a>
                 <a href="#umiejętności" class="nav__item item">Umiejętności</a>
                 <a href="#kontakt" class="nav__item">Kontakt</a>

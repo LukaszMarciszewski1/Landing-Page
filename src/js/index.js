@@ -1,7 +1,9 @@
 import '../scss/style.scss';
-// window.addEventListener("DOMContentLoaded", () => {
-//     console.log('ok')
-// });
+import {Navigation} from './modules/navigation.js'
+window.addEventListener("DOMContentLoaded", () => {
+    console.log('ok')
+    const navigation = new Navigation()
+});
 
 // class Slider {
 //     constructor() {

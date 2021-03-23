@@ -23,15 +23,29 @@
 }
 .main-content{
     transition: .7s ease;
-    margin:0 3% 3%;
+    margin:0 2% 2%;
     background-color: darken($backgroundColorDark, 5%);
     &:last-child{
         margin-bottom: 0;
     }
 }
+//intro------------------>
+.intro{
+    @include btn-shadow;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
 //projects--------------->
 .projects{
-    scroll-behavior: smooth;
     @include btn-shadow;
     max-width: 100%;
     height: auto;
@@ -149,12 +163,12 @@ margin-top: 40px;
 }
 .skills__item{
     width: 210px;
-    height: 150px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $colorTxt;
-    // background-color: $skillsItemBg;  
+    // background-color:darken($backgroundColorDark, 5%);;  
     border: 1px solid $colorLine;
     font-size: .9rem;
     &:last-child{
