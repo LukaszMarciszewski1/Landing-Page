@@ -4,28 +4,28 @@ window.addEventListener("DOMContentLoaded", () => {
     console.log('ok')
     const navigation = new Navigation()
 });
+const hamburgerBtn=document.querySelector('.hamburger')
+const nav = document.querySelector('.nav__container')
+const navItem = [...document.querySelectorAll('.nav__item')]
+//hamburger---->
+function mobileMenu(){
+    hamburgerBtn.addEventListener('click', ()=>{
+        hamburgerBtn.classList.toggle('hamburger--active');
+        
+        if(hamburgerBtn.classList.contains('hamburger--active')){
+            nav.classList.add('nav__container--active')
+        } else{
+            nav.classList.remove('nav__container--active')
+        }
+        
+    })
+}
+function coloseMenu(){
+    navItem.forEach(item => item.addEventListener('click', ()=> {
+        nav.classList.remove('nav__container--active')
+        hamburgerBtn.classList.remove('hamburger--active');
+    }))
 
-// class Slider {
-//     constructor() {
-//         this.selectMainContent = [...document.querySelectorAll('.item')]
-//         this.mainContent = [...document.querySelectorAll('.main-content')]
-
-//         this.selectMainContent.forEach(select => select.addEventListener('click', () => this.activeContent(select)))
-//     }
-
-//     contentPosition() {
-//         const activeItem = this.selectMainContent.findIndex(item => item.classList.contains('nav__item--active'))
-//         const size = this.mainContent[0].clientHeight
-//         this.mainContent.forEach(content => {
-//             content.style.transform = 'translateY(' + (-activeItem * size) + 'px)'
-//             console.log(activeItem)
-//         })
-//     }
-
-//     activeContent(select) {
-//         this.selectMainContent.forEach(select => select.classList.remove('nav__item--active'))
-//         select.classList.add('nav__item--active')
-//         this.contentPosition()
-//     }
-// }
-// const slider = new Slider()
+}
+mobileMenu()
+coloseMenu()

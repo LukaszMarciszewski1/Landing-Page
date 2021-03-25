@@ -2,5 +2,26 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 320px 1fr 250px;
+    gap: 30px;
+}
+@media screen and (max-width: 1480px){
+    #wrapper{
+        grid-template-columns: 320px 1fr 200px;
+        grid-template-rows: auto auto;
+        height: auto;
+    }
+}
+@media screen and (max-width: 900px){
+    #wrapper{
+        grid-template-rows: 120px auto auto;
+    }
+}
+@media screen and (max-width: 700px){
+    #wrapper{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
 }

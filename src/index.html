@@ -13,22 +13,22 @@
     <div id="wrapper">
         <section class="about">
             <div class="about__text-container">
-                <img src="images/person.png" alt="">
                 <h1 class="about__name">Łukasz <br> Marciszeski</h1>
                 <h2 class="about__position">Front end developer</h2>
                 <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, in
                     corporis?
                     Dolor, culpa itaque nihil fuga eos laboriosam distinctio officia. Cumque quas corrupti soluta quidem
                     placeat saepe, ea sint harum?</p>
+                <div class="about__links">
+                    <a href="https://github.com/LukaszMarciszewski1">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="mailto:lmarciszewski1@gmail.com">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
             </div>
-            <div class="about__links">
-                <a href="https://github.com/LukaszMarciszewski1">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <a href="mailto:lmarciszewski1@gmail.com">
-                    <ion-icon name="mail-outline"></ion-icon>
-                </a>
-            </div>
+
             <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p>
         </section>
         <main class="main">
@@ -87,54 +87,54 @@
                 </section>
 
                 <section class="skills main-content" id="umiejętności">
-                    <div class="technology">
+                    <div class="skills__content">
                         <h2 class="skills__title">Technologie</h2>
                         <div class="skills__container">
                             <div class="skills__item">
-                                <h3 class="skills__name">HTML5</h3>
+                                <p class="skills__name">HTML5</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">CSS3</h3>
+                                <p class="skills__name">CSS3</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">Sass</h3>
+                                <p class="skills__name">Sass</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">JavaScript</h3>
+                                <p class="skills__name">JavaScript</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">Webpack</h3>
+                                <p class="skills__name">Webpack</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">WordPress</h3>
+                                <p class="skills__name">WordPress</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">React <br><small>(podstawy)</small></h3>
+                                <p class="skills__name">React <br><small>(podstawy)</small></p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">Node.js<br><small>(podstawy)</h3>
+                                <p class="skills__name">Node.js<br><small>(podstawy)</small></p>
                             </div>
                         </div>
                     </div>
-                    <div class="graphic-programs">
+                    <div class="skills__content">
                         <h2 class="skills__title">Programy graficzne</h2>
                         <div class="skills__container">
                             <div class="skills__item">
-                                <h3 class="skills__name">Photoshop</h3>
+                                <p class="skills__name">Photoshop</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">Illustrator</h3>
+                                <p class="skills__name">Illustrator</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">InDesign</h3>
+                                <p class="skills__name">InDesign</p>
                             </div>
                             <div class="skills__item">
-                                <h3 class="skills__name">Corel DRAW</h3>
+                                <p class="skills__name">Corel DRAW</p>
                             </div>
                         </div>
                     </div>
                 </section>
-                
+
                 <section class="contact main-content" id="kontakt">
                     <div class="contact-container">
                         <form name="contact-form" id="contact-form" method="post" action="">
@@ -160,10 +160,15 @@
             </div>
         </main>
         <nav class="nav">
+            <button class="hamburger">
+                <span class="hamburger__box">
+                  <span class="hamburger__inner"></span>
+                </span>
+            </button>
             <div class="nav__container">
-                <a href="#start" class="nav__item item nav__item--active">Start</a>
-                <a href="#projekty" class="nav__item item nav__item--active">Projekty</a>
-                <a href="#umiejętności" class="nav__item item">Umiejętności</a>
+                <a href="#start" class="nav__item">Start</a>
+                <a href="#projekty" class="nav__item">Projekty</a>
+                <a href="#umiejętności" class="nav__item">Umiejętności</a>
                 <a href="#kontakt" class="nav__item">Kontakt</a>
             </div>
         </nav>

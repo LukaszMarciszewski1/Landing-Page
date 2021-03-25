@@ -8,12 +8,11 @@
   body{
     background-color: $backgroundColorDark;
     background-color: darken($backgroundColorDark, 7%);
-    background-color: #0f0f0f;
+    background-color: $background;
     color: $colorLight;
     letter-spacing: 1px;
-    overflow-x: hidden;
     font-family: 'Roboto Mono', monospace;
-    // font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
   }
 
   button{
@@ -47,3 +46,20 @@ a{
   letter-spacing: 0px;
   // font-family: 'Roboto', sans-serif;
 }
+@media screen and (max-width: 1480px){
+  p{
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 1025px){
+  p{
+    line-height: 1.4rem;
+  }
+}
+@media screen and (max-width: 700px){
+  p{
+    line-height: 1.3rem;
+    font-size: 14px;
+  }
+}
+
