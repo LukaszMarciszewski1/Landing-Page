@@ -3,66 +3,143 @@
 .contact {
     scroll-behavior: smooth;
     @include btn-shadow;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    padding: 80px 30px;
+    min-height: 600px;
+}
+
+.contact__container {
+    width:100%;
+    display: flex;
     justify-content: center;
-    padding: 40px;
+    // margin-top: 60px;
 }
 
-.contact ul {
+.contact__info-title{
+    margin: 40px 0 15px;
+}
+.contact__info-description {
     list-style: none;
-    border-radius: 5px;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    color: $colorTxt;
+    margin: 10px 0;
+    li {
+        margin: 10px 0;
+        .contact__info-link {
+            display: flex;
+            align-items: center;
+            color: $colorTxt;
+            ion-icon {
+                font-size: 1.2rem;
+                margin-left: 10px;
+            }
+            & > *:hover {
+                color: $colorLight
+            }
+           &:hover {
+                color: $colorLight
+            }
+        }
+    }
 }
 
-.contact li {
-    padding: 10px;
-}
+// a{
+//     margin: 10px 0;
+// }
 
-.contact li:last-of-type {
-    border-bottom: none;
-}
 
-.contact label {
-    display: block;
-    font-size: .8em;
-    color: #999;
-    padding-left: 5px;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 5px;
-    border: none;
-    resize: vertical;
-    background: transparent;
-    color: #fff;
-    font-weight: bolder;
-}
-
-input:focus {
-    outline: none;
-    border: none;
-}
-
-textarea:focus {
-    outline: none;
-    border: none;
+#contact-form {
+    @include btn-shadow;
+    // border: 1px solid $colorLine;
+    margin-right: 60px;
+    padding: 40px;
+    width: 700px;
+    min-width: 330px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .textarea {
-    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+    position: relative;
+    // border-bottom: 1px solid $colorLine;
+
+    label {
+        display: block;
+        font-size: .8em;
+        color: #999;
+        padding-left: 5px;
+        margin: 25px 0 5px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 1rem;
+        border: none;
+        resize: vertical;
+        background: transparent;
+        color: $colorLight;
+        border-bottom: 1px solid $colorLine;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $colorLightGreen;
+    }
 }
 
 .send {
-    margin-left: 50px;
+    width: 200px;
+    margin-top: 30px;
     text-transform: uppercase;
     padding: 20px 30px;
     background: transparent;
-    color: #dfdfdf;
+    color: $colorLight;
     font-size: 14px;
     letter-spacing: 2px;
+    border: 1px solid $colorLine;
+    align-self: center;
+}
+
+@media screen and (max-width: 1380px){
+    #contact-form {
+        margin-right: 40px;
+        width:600px;
+    }
+}
+@media screen and (max-width: 1225px){
+    #contact-form {
+        margin-right: 30px;
+        width:500px;
+    }
+}
+@media screen and (max-width: 1110px){
+    .contact__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-form {
+        margin-right: 0;
+        width: 100%;
+        max-width: 1000px;
+    }
+    .contact__info-container{
+        width: 90%;
+        align-self: flex-start;
+    }
+}
+@media screen and (max-width: 400px){
+    .contact {
+        padding: 60px 20px;
+    }
 }

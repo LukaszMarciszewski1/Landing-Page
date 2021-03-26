@@ -11,48 +11,54 @@
 
 <body>
     <div id="wrapper">
-        <section class="about">
-            <div class="about__text-container">
-                <h1 class="about__name">Łukasz <br> Marciszeski</h1>
-                <h2 class="about__position">Front end developer</h2>
-                <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, in
-                    corporis?
-                    Dolor, culpa itaque nihil fuga eos laboriosam distinctio officia. Cumque quas corrupti soluta quidem
-                    placeat saepe, ea sint harum?</p>
-                <div class="about__links">
-                    <a href="https://github.com/LukaszMarciszewski1">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                    <a href="mailto:lmarciszewski1@gmail.com">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </a>
-                </div>
+        <nav class="nav">
+            <button class="hamburger">
+                <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </span>
+            </button>
+            <div class="nav__container">
+                <a href="#start" class="nav__item">O mnie</a>
+                <a href="#projekty" class="nav__item">Projekty</a>
+                <a href="#umiejętności" class="nav__item">Umiejętności</a>
+                <a href="#kontakt" class="nav__item">Kontakt</a>
             </div>
+        </nav>
 
-            <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p>
-        </section>
         <main class="main">
             <div class="main__container">
-                <section class="intro main-content" id="start">
-                    <!-- <img src="images/line.png" alt=""> -->
+                <section class="about main-content" id="start">
+                    <div class="about__text-container">
+                        <h1 class="about__name">Łukasz Marciszeski</h1>
+                        <h2 class="about__position">Front end developer</h2>
+                        <!-- <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, in
+                            corporis?
+                            Dolor, culpa itaque nihil fuga eos laboriosam distinctio officia. Cumque quas corrupti soluta quidem
+                            placeat saepe, ea sint harum?</p> -->
+                    </div>
+
+                    <!-- <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p> -->
+                </section>
+                <section class="intro main-content">
+                    <!-- <img src="images/intro.jpg" alt=""> -->
+                    <!-- //Zdjęcie autorstwa Rahul Pandit z Pexels -->
                     <h2>I make brands mater in culture.</h2>
                 </section>
 
                 <section class="projects main-content" id="projekty">
+                    <h2 class="content__title">Projekty</h2>
                     <div class="project">
                         <div class="project__img-container"><img src="images/Kalkulator.jpg"
                                 alt="aplikacja dla drukarni">
                         </div>
                         <div class="project__about">
-                            <h2 class="project__name">Aplikacja dla drukarni</h2>
-                            <p class="project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero
-                                suscipit laboriosam, iste autem accusamus? Soluta asperiores sint, maxime magni,
-                                laudantium
-                                tempore corporis quo pariatur vero, inventore numquam a illo.</p>
+                            <h3 class="project__name">Kalkulator drukarni</h3>
+                            <p class="project__text">Kalkulator do oblicznaia cen bazowych dla produktów poligraficznych
+                            </p>
                             <div class="project__links">
-                                <a href="" class="link">github</a>
-                                <a href="https://cennik-druku.netlify.app/" target="_blank" class="link">link do
-                                    strony</a>
+                                <a href="https://github.com/LukaszMarciszewski1/PrintingHouse-calculator"
+                                    class="link">GitHub</a>
+                                <a href="https://cennik-druku.netlify.app/" target="_blank" class="link">Podgląd</a>
                             </div>
                         </div>
                     </div>
@@ -60,13 +66,12 @@
                         <div class="project__img-container"><img src="images/Olejnik1.jpg" alt="aplikacja dla drukarni">
                         </div>
                         <div class="project__about">
-                            <h2 class="project__name">Olejnik</h2>
+                            <h3 class="project__name">Olejnik</h3>
                             <p class="project__text">Strona internetowa stworzona dla firmy Olejnik. <br>
                                 Użyte technologie: HTML5, SCSS, JavaScript, jQuery.</p>
                             <div class="project__links">
-                                <a href="" class="link">github</a>
-                                <a href="http://www.olejnik.com.pl/index.html" target="_blank" class="link">link do
-                                    strony</a>
+                                <a href="" class="link">GitHub</a>
+                                <a href="http://www.olejnik.com.pl/index.html" target="_blank" class="link">Podgląd</a>
                             </div>
                         </div>
                     </div>
@@ -74,22 +79,24 @@
                         <div class="project__img-container"><img src="images/RLM.jpg" alt="aplikacja dla drukarni">
                         </div>
                         <div class="project__about">
-                            <h2 class="project__name">Rajdowa liga mazowsza</h2>
+                            <h3 class="project__name">Rajdowa Liga Mazowsza RC</h3>
                             <p class="project__text">Aplikacja stworzona dla Rajdowej ligi mazowsza. <br>
                                 Podstawowe załóżenia: odliczanie czasu do startu wyścigu, dodawanie zawodnikow, </p>
                             <div class="project__links">
-                                <a href="" class="link" title="Github">github</a>
-                                <a href="https://rlm-stoper.netlify.app/" target="_blank" class="link">link do
-                                    strony</a>
+                                <a href="https://github.com/LukaszMarciszewski1/RLM-stopwatch" class="link"
+                                    title="Github">GitHub</a>
+                                <a href="https://rlm-stoper.netlify.app/" target="_blank" class="link">Podgląd</a>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <section class="skills main-content" id="umiejętności">
+                    <h2 class="content__title">Umiejętności i technologie</h2>
+                    <div class="skills__container">
                     <div class="skills__content">
-                        <h2 class="skills__title">Technologie</h2>
-                        <div class="skills__container">
+                        <h3 class="skills__title">Technologie</h3>
+                        <div class="skills__items">
                             <div class="skills__item">
                                 <p class="skills__name">HTML5</p>
                             </div>
@@ -117,8 +124,8 @@
                         </div>
                     </div>
                     <div class="skills__content">
-                        <h2 class="skills__title">Programy graficzne</h2>
-                        <div class="skills__container">
+                        <h3 class="skills__title">Programy graficzne</h3>
+                        <div class="skills__items">
                             <div class="skills__item">
                                 <p class="skills__name">Photoshop</p>
                             </div>
@@ -133,10 +140,12 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                 </section>
 
                 <section class="contact main-content" id="kontakt">
-                    <div class="contact-container">
+                    <h2 class="content__title">Kontakt</h2>
+                    <div class="contact__container">
                         <form name="contact-form" id="contact-form" method="post" action="">
                             <div class="textarea">
                                 <label for="contact-name">Name :</label>
@@ -148,30 +157,49 @@
                             </div>
                             <div class="textarea">
                                 <label for="contact-project">Message :</label>
-                                <textarea type="email" name="contact-project" id="contact-project" rows="6" value=""
-                                    required>
-                                        </textarea>
+                                <textarea type="text" name="contact-message" id="contact-message" rows="6"></textarea>
                             </div>
                             <button type="submit" name="contact-submit" id="contact-submit"
                                 class="send wow fadeInUp">Send Message</button>
                         </form>
+                        <div class="contact__info-container">
+                            <h3 class="contact__info-title">Adres</h3>
+                            <p class="contact__info-description">Warszawa <ion-icon name="location-outline"></ion-icon>
+                            </p>
+                            <h3 class="contact__info-title">Informacje kontaktowe</h3>
+                            <ul class="contact__info-description">
+                                <li>
+                                    <a class="contact__info-link" href="mailto:lmarciszewski1@gmail.com">
+                                        lmarciszewski1@gmail.com <ion-icon name="mail-outline"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contact__info-link" href="tel:504654093">
+                                       504 654 093 <ion-icon name="call-outline"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contact__info-link" href="https://github.com/LukaszMarciszewski1">
+                                       GitHub <ion-icon name="logo-github" title=""></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
+                <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p>
             </div>
         </main>
-        <nav class="nav">
-            <button class="hamburger">
-                <span class="hamburger__box">
-                  <span class="hamburger__inner"></span>
-                </span>
-            </button>
-            <div class="nav__container">
-                <a href="#start" class="nav__item">Start</a>
-                <a href="#projekty" class="nav__item">Projekty</a>
-                <a href="#umiejętności" class="nav__item">Umiejętności</a>
-                <a href="#kontakt" class="nav__item">Kontakt</a>
+        <!-- <div class="fixed-links">
+            <div class="fixed-links__container">
+                <a href="https://github.com/LukaszMarciszewski1">
+                    <ion-icon name="logo-github" title=""></ion-icon>
+                </a>
+                <a href="mailto:lmarciszewski1@gmail.com">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
             </div>
-        </nav>
+        </div> -->
     </div>
 </body>
 

@@ -1,9 +1,5 @@
 import '../scss/style.scss';
 import {Navigation} from './modules/navigation.js'
-window.addEventListener("DOMContentLoaded", () => {
-    console.log('ok')
-    const navigation = new Navigation()
-});
 const hamburgerBtn=document.querySelector('.hamburger')
 const nav = document.querySelector('.nav__container')
 const navItem = [...document.querySelectorAll('.nav__item')]
@@ -27,5 +23,9 @@ function coloseMenu(){
     }))
 
 }
-mobileMenu()
-coloseMenu()
+window.addEventListener("DOMContentLoaded", () => {
+    mobileMenu()
+    coloseMenu()
+});
+
+

@@ -8,21 +8,25 @@
     justify-content: center;
     padding: 80px 30px;
 }
-
+.skills__container{
+    @include btn-shadow;
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 980px;
+    padding: 40px;
+    border-radius: 10px;
+}
 .skills__content {
-    width: auto;
     height: auto;
-
     &:last-child {
         margin-top: 40px;
     }
 }
-
 .skills__title {
     margin: 0 0 30px 40px;
     font-size: 1.2rem;
     position: relative;
-
     &::before {
         content: '';
         position: absolute;
@@ -33,16 +37,16 @@
         transform: translateY(-50%);
     }
 }
-
-.skills__container {
+.skills__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
 .skills__item {
+    width: 100%;
     width: 190px;
-    height: 130px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,48 +70,35 @@
         }
     }
 }
-
-@media screen and (max-width: 1600px) {
-    .skills__item {
-        width: 190px;
-    }
-}
-
-@media screen and (max-width: 1480px) {
-    .skills__item {
-        width: 200px;
+@media screen and (max-width: 1300px) {
+    .skills__container{
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .skills {
-        padding: 40px 20px;
-    }
-
-    .skills__container {
+    .skills__items {
         grid-template-columns: repeat(3, 1fr);
+        gap: .7rem;
+    }
+    .skills__item {
+        height: 100px;
     }
 }
 
 @media screen and (max-width: 700px) {
     .skills__item {
         width: 170px;
-        height: 100px;
+        height: 80px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    // .skills__container {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
     .skills__title {
         margin: 0 0 20px 40px;
     }
     .skills__content {
         width: 100%;
-    }
-    .skills__container {
-        gap: .7rem;
     }
 
     .skills__item {
@@ -115,7 +106,10 @@
     }
 }
 @media screen and (max-width: 500px) {
-   .skills__container {
+    .skills {
+        padding: 60px 20px;
+    }
+   .skills__items {
         grid-template-columns: repeat(2, 1fr);
     }
     .skills__item p{
