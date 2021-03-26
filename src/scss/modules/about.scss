@@ -1,11 +1,11 @@
 .about {
-    @include btn-shadow;
+    @include shadow-container;
     width: 100%;
     height: auto;
     justify-self: flex-start;
     padding: 30px;
     position: relative;
-    background-color: darken($backgroundColorDark, 5%);
+    background-color: $backgroundColorContainer;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -30,7 +30,6 @@
 
 .about__position {
     margin-top: 15px;
-    margin-bottom: 25px;
     font-weight: 400;
     font-size: .9rem;
 }
@@ -46,7 +45,6 @@
     }
     .about__position {
         margin-top: 10px;
-        margin-bottom: 15px;
     }
     .about__text {
         font-size: 14px;

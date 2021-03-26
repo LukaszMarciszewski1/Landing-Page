@@ -1,7 +1,6 @@
 @import "_variables";
 @import "_mixins";
 @import "fonts";
-@import "reset";
 @import "modules/wrapper.scss";
 @import "modules/about.scss";
 @import "modules/nav.scss";
@@ -9,4 +8,4 @@
 @import "modules/projects.scss";
 @import "modules/skills.scss";
 @import "modules/contact.scss";
-
+@import "reset";

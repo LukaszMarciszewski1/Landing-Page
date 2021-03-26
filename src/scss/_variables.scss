@@ -1,6 +1,27 @@
 //colors
 $background: #0f0f0f;
-$background: #0e0d0d;
+$background: #020101;
+// $backgroundColor: #020101;
+// $backgroundColorSection: darken(#191a1d, 4%);
+// $backgroundColorContainer: #191a1d;
+
+
+//#191a1d
+
+
+$backgroundColor: #020101;
+$backgroundColorSection: #111213;
+$backgroundColorContainer: lighten($backgroundColorSection, 2%);
+
+
+
+
+
+
+
+
+
+
 $backgroundColorDark:#1b1c1f;
 $backgroundColorDark:#312f2f;
 $backgroundColorDark:#292727;

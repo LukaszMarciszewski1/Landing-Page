@@ -14,8 +14,8 @@
 }
 
 .main-content {
-    margin-bottom: 30px;
-    background-color: darken($backgroundColorDark, 5%);
+    margin-bottom: 20px;
+    background-color: $backgroundColorSection;
 
     &:last-child {
         margin-bottom: 20px;
@@ -28,7 +28,7 @@
 }
 //intro------------------>
 .intro {
-    @include btn-shadow;
+    @include shadow-container;
     @include flex-center;
     position: relative;
     max-width: 100%;
@@ -49,13 +49,16 @@
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
     .main {
         grid-column: 1/-1;
         grid-row: 2/-1;
     }
     .content__title{
         margin-bottom:60px;
+    }
+    h3{
+        font-size: 1.2rem;
     }
 }
 

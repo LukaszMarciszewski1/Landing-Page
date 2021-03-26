@@ -16,29 +16,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: $background;
+    background-color: $backgroundColor;
 }
 
 .nav__item {
-    @include btn-shadow;
+    @include shadow-container;
     @include flex-center;
     font-size: 1.05rem;
     letter-spacing: 1px;
     width: 100%;
     height: calc(95% / 4);
     margin-bottom: 10px;
-    background-color: darken($backgroundColorDark, 6%);
+    background-color: $backgroundColorSection;
     color: $colorLight;
     font-family: 'Roboto Mono', monospace;
-    transition: .2s;
     &:last-child {
         margin-bottom: 0;
     }
 
     &:hover {
+        background: rgb(37, 37, 39);
+        background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
         color: $colorLightGreen;
-        background-color: darken($backgroundColorDark, 2%);
-        ;
     }
 
     &:focus {
@@ -61,13 +60,6 @@
     height: 24px;
     display: inline-block;
     position: relative;
-}
-
-@mixin hamburger-content {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    position: absolute;
 }
 
 .hamburger__inner {
@@ -106,12 +98,12 @@
 }
 
 .hamburger__inner.newClass::after {
-    background-color: white;
+    background-color: $colorLight;
     transition: .2s ease-in-out;
 }
 
 .hamburger__inner.newClass::before {
-    background-color: white;
+    background-color: $colorLight;
     transition: .2s ease-in-out;
 }
 
@@ -120,7 +112,7 @@
             font-size: 1rem;
         }
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1000px){
     .nav {
         grid-column: 1/-1;
         grid-row: 1/2;
@@ -137,7 +129,7 @@
 }
 @media screen and (max-width: 700px){
     .nav{
-        @include btn-shadow;
+        @include shadow-container;
         background-color: darken($backgroundColorDark, 6%);
         padding: 0 20px;
         display: flex;
@@ -146,7 +138,7 @@
     }
 
     .nav__container{
-        @include btn-shadow;
+        @include shadow-container;
         background-color: darken($backgroundColorDark, 6%);
         height: auto;
         flex-direction: column;

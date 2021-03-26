@@ -6,9 +6,7 @@
     scroll-behavior: smooth;
   }
   body{
-    background-color: $backgroundColorDark;
-    background-color: darken($backgroundColorDark, 7%);
-    background-color: $background;
+    background-color: $backgroundColor;
     color: $colorLight;
     letter-spacing: 1px;
     font-family: 'Roboto Mono', monospace;
@@ -44,7 +42,9 @@ a{
   color: $colorLight;
   text-decoration: none;
   letter-spacing: 0px;
-  // font-family: 'Roboto', sans-serif;
+  &:hover{
+    color: $colorLightGreen;
+  }
 }
 @media screen and (max-width: 1480px){
   p{
@@ -52,14 +52,24 @@ a{
   }
 }
 @media screen and (max-width: 1025px){
+  h3{
+    font-size: 1.2rem;
+  }
   p{
     line-height: 1.4rem;
   }
 }
 @media screen and (max-width: 700px){
+
+}
+@media screen and(max-width:500px){
+  h3{
+    font-size: 1.05rem;
+  }
   p{
     line-height: 1.3rem;
     font-size: 14px;
   }
+  
 }
 

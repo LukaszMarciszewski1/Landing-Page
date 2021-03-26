@@ -5,15 +5,14 @@
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-rows:1fr;
-    gap: 30px;
-    // padding: 0 0 0 50px;
+    gap: 20px;
 }
 @media screen and (max-width: 1480px){
     #wrapper{
         grid-template-columns: 1fr 200px;
     }
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1000px){
     #wrapper{
         grid-template-rows: 100px auto;
     }

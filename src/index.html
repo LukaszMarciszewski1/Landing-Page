@@ -29,19 +29,13 @@
             <div class="main__container">
                 <section class="about main-content" id="start">
                     <div class="about__text-container">
+                        <img src="images/person.png" alt="">
                         <h1 class="about__name">Łukasz Marciszeski</h1>
                         <h2 class="about__position">Front end developer</h2>
-                        <!-- <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, in
-                            corporis?
-                            Dolor, culpa itaque nihil fuga eos laboriosam distinctio officia. Cumque quas corrupti soluta quidem
-                            placeat saepe, ea sint harum?</p> -->
-                    </div>
 
-                    <!-- <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p> -->
+                    </div>
                 </section>
                 <section class="intro main-content">
-                    <!-- <img src="images/intro.jpg" alt=""> -->
-                    <!-- //Zdjęcie autorstwa Rahul Pandit z Pexels -->
                     <h2>I make brands mater in culture.</h2>
                 </section>
 
@@ -92,7 +86,7 @@
                 </section>
 
                 <section class="skills main-content" id="umiejętności">
-                    <h2 class="content__title">Umiejętności i technologie</h2>
+                    <h2 class="content__title">Umiejętności</h2>
                     <div class="skills__container">
                     <div class="skills__content">
                         <h3 class="skills__title">Technologie</h3>
@@ -146,25 +140,26 @@
                 <section class="contact main-content" id="kontakt">
                     <h2 class="content__title">Kontakt</h2>
                     <div class="contact__container">
-                        <form name="contact-form" id="contact-form" method="post" action="">
+                        <form name="contact-form" id="contact-form" method="POST" action = "https://formsubmit.io/send/ludwik123456789@gmail.com">
                             <div class="textarea">
-                                <label for="contact-name">Name :</label>
-                                <input type="text" name="contact-name" id="contact-name" value="" required>
+                                <label for="contact-name">Imię :</label>
+                                <input name="name" type="text" id="name" required>
                             </div>
                             <div class="textarea">
                                 <label for="contact-email">Email :</label>
-                                <input type="email" name="contact-email" id="contact-email" value="" required>
+                                <input type="email" name="email" id="email" required>
                             </div>
                             <div class="textarea">
-                                <label for="contact-project">Message :</label>
+                                <label for="contact-project">Wiadomość :</label>
                                 <textarea type="text" name="contact-message" id="contact-message" rows="6"></textarea>
                             </div>
+                            <input  name = "_formsubmit_id"  type = "text"  style = "display: none" >
                             <button type="submit" name="contact-submit" id="contact-submit"
-                                class="send wow fadeInUp">Send Message</button>
+                                class="send wow fadeInUp">Wyślij wiadomość</button>
                         </form>
                         <div class="contact__info-container">
                             <h3 class="contact__info-title">Adres</h3>
-                            <p class="contact__info-description">Warszawa <ion-icon name="location-outline"></ion-icon>
+                            <p class="contact__info-description location">Warszawa <ion-icon name="location-outline"></ion-icon>
                             </p>
                             <h3 class="contact__info-title">Informacje kontaktowe</h3>
                             <ul class="contact__info-description">
@@ -190,16 +185,6 @@
                 <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p>
             </div>
         </main>
-        <!-- <div class="fixed-links">
-            <div class="fixed-links__container">
-                <a href="https://github.com/LukaszMarciszewski1">
-                    <ion-icon name="logo-github" title=""></ion-icon>
-                </a>
-                <a href="mailto:lmarciszewski1@gmail.com">
-                    <ion-icon name="mail-outline"></ion-icon>
-                </a>
-            </div>
-        </div> -->
     </div>
 </body>
 
