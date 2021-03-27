@@ -14,18 +14,43 @@
 }
 
 .main-content {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background-color: $backgroundColorSection;
 
     &:last-child {
         margin-bottom: 20px;
     }
 }
-.content__title{
-    color: darken($colorLightGreen, 35%);
-    margin-bottom:80px;
-    font-size: 1.7rem
+
+.content__title {
+    position: relative;
+    margin-bottom: 60px;
+    color: $colorTxt;
+    font-size: 1.7rem;
+    &::before {
+        width: 50px;
+        @include title-section-line;
+        left: -80px
+    }
+    &::after{
+        width: 50px;
+        @include title-section-line;
+        right: -80px
+    }
+    @media screen and (max-width:700px){
+        &::before, 
+        &::after {
+            width: 50px
+        }
+        &::before{
+            left: -70px
+        }
+        &::after{
+            right: -70px
+        }
+      }
 }
+
 //intro------------------>
 .intro {
     @include shadow-container;
@@ -38,10 +63,11 @@
     align-items: center;
     justify-content: center;
     padding: 80px 20px;
-    height:auto;
-    min-height: 400px;
+    height: auto;
+    min-height: 700px;
     overflow: hidden;
-    img{
+
+    img {
         position: absolute;
         width: 100%;
         height: auto;
@@ -49,15 +75,17 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .main {
         grid-column: 1/-1;
         grid-row: 2/-1;
     }
-    .content__title{
-        margin-bottom:60px;
+
+    .content__title {
+        margin-bottom: 60px;
     }
-    h3{
+
+    h3 {
         font-size: 1.2rem;
     }
 }
@@ -68,11 +96,13 @@
     }
 
 }
+
 @media screen and(max-width:500px) {
-    .content__title{
+    .content__title {
         font-size: 1.2rem;
     }
-    .intro{
+
+    .intro {
         padding: 60px 20px;
     }
 }

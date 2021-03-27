@@ -15,7 +15,7 @@
 .contact__container {
     @include shadow-container;
     width:100%;
-    max-width: 980px;
+    max-width: 1080px;
     padding:80px 40px;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@
                 color: $colorLight
             }
            &:hover {
-                color: $colorLight
+                color: $colorLightGreen
             }
         }
     }
@@ -53,7 +53,7 @@
 
 .location{
     padding-bottom: 40px;
-    border-bottom: 1px solid $colorLine;
+    border-bottom: 1px solid $colorLight;
 }
 
 #contact-form {
@@ -115,17 +115,6 @@
     align-self: center;
 }
 
-// @media screen and (max-width: 1380px){
-//     #contact-form {
-//         margin-right: 40px;
-//         width:600px;
-//     }
-// }
-@media screen and (max-width: 1225px){
-    #contact-form {
-        // margin-right: 30px;
-    }
-}
 @media screen and (max-width: 1200px){
     .contact__container {
         flex-direction: column;
@@ -147,6 +136,6 @@
         padding: 60px 20px;
     }
     .contact__container {
-        padding:20px;
+        padding: 15px;
     }
 }

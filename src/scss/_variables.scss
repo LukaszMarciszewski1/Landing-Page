@@ -8,14 +8,16 @@ $background: #020101;
 
 //#191a1d
 
-
-$backgroundColor: #020101;
 $backgroundColorSection: #111213;
+$backgroundColor: darken($backgroundColorSection, 2%);
 $backgroundColorContainer: lighten($backgroundColorSection, 2%);
 
 
 
 
+$backgroundColor: #111213;
+$backgroundColorSection: #191919;
+$backgroundColorContainer: #232324;
 
 
 
@@ -34,5 +36,6 @@ $colorYellow: #fce44e;
 $colorYellow: #64f4ac;
 $colorRed: #ff2a45;
 $colorLightGreen: #64f4ac;
+// $colorLightGreen: #cacaca;
 $colorTxt:#acabab;
 $colorLine:#5c5c5c;
