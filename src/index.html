@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/f3ac7ea5a2.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,17 @@
                     </div>
                 </section>
                 <section class="intro main-content">
-                    <h2>I make brands mater in culture.</h2>
+                    <div class="intro__about-me-txt">
+                        <h3>O mnie</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis illum, sint odit
+                            consequatur libero deleniti quaerat vitae quibusdam corporis, soluta esse, nobis ut ipsa.
+                            Molestiae, tempore. Iusto, consequuntur ipsam?
+                        </p>
+                    </div>
+                    <div class="intro__img">
+                        <img src="images/thinking.svg" alt="">
+                    </div>
                 </section>
 
                 <section class="projects main-content" id="projekty">
@@ -44,11 +55,11 @@
                     <div class="project">
                         <div class="project__img-container">
                             <div class="a">
-                            <img src="images/Kalkulator2.jpg"alt="">
+                                <img src="images/Kalkulator2.jpg" alt="">
 
                             </div>
                             <div class="a">
-                                <img src="images/Kalkulator-mobile.jpg"alt="">
+                                <img src="images/Kalkulator-mobile.jpg" alt="">
                             </div>
                         </div>
                         <div class="project__text-container">
@@ -94,59 +105,60 @@
                 <section class="skills main-content" id="umiejętności">
                     <h2 class="content__title">Umiejętności</h2>
                     <div class="skills__container">
-                    <div class="skills__content">
-                        <h3 class="skills__title">Technologie</h3>
-                        <div class="skills__items">
-                            <div class="skills__item">
-                                <p class="skills__name">HTML5</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">CSS3</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">Sass</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">JavaScript</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">Webpack</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">WordPress</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">React <br><small>(podstawy)</small></p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">Node.js<br><small>(podstawy)</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__content">
-                        <h3 class="skills__title">Programy graficzne</h3>
-                        <div class="skills__items">
-                            <div class="skills__item">
-                                <p class="skills__name">Photoshop</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">Illustrator</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">InDesign</p>
-                            </div>
-                            <div class="skills__item">
-                                <p class="skills__name">Corel DRAW</p>
+                        <div class="skills__content">
+                            <h3 class="skills__title">Technologie</h3>
+                            <div class="skills__items">
+                                <div class="skills__item">
+                                    <p class="skills__name">HTML5</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">CSS3</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">Sass</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">JavaScript</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">Webpack</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">WordPress</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">React <br><small>(podstawy)</small></p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">Node.js<br><small>(podstawy)</small></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="skills__content">
+                            <h3 class="skills__title">Programy graficzne</h3>
+                            <div class="skills__items">
+                                <div class="skills__item">
+                                    <p class="skills__name">Photoshop</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">Illustrator</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">InDesign</p>
+                                </div>
+                                <div class="skills__item">
+                                    <p class="skills__name">Corel DRAW</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <section class="contact main-content" id="kontakt">
                     <h2 class="content__title">Kontakt</h2>
                     <div class="contact__container">
-                        <form name="contact-form" id="contact-form" method="POST" action = "https://formsubmit.io/send/ludwik123456789@gmail.com">
+                        <form name="contact-form" id="contact-form" method="POST"
+                            action="https://formsubmit.io/send/ludwik123456789@gmail.com">
                             <div class="textarea">
                                 <label for="contact-name">Imię :</label>
                                 <input name="name" type="text" id="name" required>
@@ -159,13 +171,14 @@
                                 <label for="contact-project">Wiadomość :</label>
                                 <textarea type="text" name="contact-message" id="contact-message" rows="6"></textarea>
                             </div>
-                            <input  name = "_formsubmit_id"  type = "text"  style = "display: none" >
+                            <input name="_formsubmit_id" type="text" style="display: none">
                             <button type="submit" name="contact-submit" id="contact-submit"
                                 class="send wow fadeInUp">Wyślij wiadomość</button>
                         </form>
                         <div class="contact__info-container">
                             <h3 class="contact__info-title">Adres</h3>
-                            <p class="contact__info-description location">Warszawa <ion-icon name="location-outline"></ion-icon>
+                            <p class="contact__info-description location">Warszawa <ion-icon name="location-outline">
+                                </ion-icon>
                             </p>
                             <h3 class="contact__info-title">Informacje kontaktowe</h3>
                             <ul class="contact__info-description">
@@ -176,12 +189,12 @@
                                 </li>
                                 <li>
                                     <a class="contact__info-link" href="tel:504654093">
-                                       504 654 093 <ion-icon name="call-outline"></ion-icon>
+                                        504 654 093 <ion-icon name="call-outline"></ion-icon>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="contact__info-link" href="https://github.com/LukaszMarciszewski1">
-                                       GitHub <ion-icon name="logo-github" title=""></ion-icon>
+                                        GitHub <ion-icon name="logo-github" title=""></ion-icon>
                                     </a>
                                 </li>
                             </ul>

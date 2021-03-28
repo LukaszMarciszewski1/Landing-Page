@@ -58,22 +58,35 @@
     position: relative;
     max-width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px;
+    padding: 0;
     height: auto;
-    min-height: 700px;
+    padding: 80px 30px;
     overflow: hidden;
-
-    img {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        opacity: .1;
+}
+.intro__about-me-txt{
+    max-width: 400px;
+    padding: 30px 100px 30px 30px;
+    border-left: 1px solid $colorLine;
+    h3{
+        margin-bottom: 15px;
     }
 }
+.intro__img{
+    width: 750px;
+    max-width: 750px;
+    @include shadow-container;
+    padding: 70px 30px;
+    border-radius: 15px;
+    background-color: $backgroundColorContainer;
+    img{
+        width: 100%;
+        height: auto;
+                 &:hover{
+                transition: 1s;
+            }
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     .main {

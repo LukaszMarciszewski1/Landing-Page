@@ -27,9 +27,11 @@
     width: 100%;
     height: calc(95% / 4);
     margin-bottom: 10px;
-    background-color: $backgroundColorContainer;
+    // background-color: $backgroundColorContainer;
     color: $colorLight;
     font-family: 'Roboto Mono', monospace;
+    background: rgb(37, 37, 39);
+    background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
     &:last-child {
         margin-bottom: 0;
     }
@@ -117,6 +119,7 @@
         grid-column: 1/-1;
         grid-row: 1/2;
         height: 100%;
+        padding: 0;
     }
     .nav__container {
         flex-direction: row; 
@@ -124,10 +127,11 @@
     .nav__item {
         height: 100%;
         width: calc(95% / 4);
+        font-size: .9rem;
     }
 
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:600px){
     .nav{
         @include shadow-container;
         background-color: darken($backgroundColorDark, 6%);
