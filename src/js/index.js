@@ -1,5 +1,8 @@
 import '../scss/style.scss';
 import {Navigation} from './modules/navigation.js'
+import {svgHero} from './modules/svg.js'
+import {animeHeroSvg} from './modules/animations.js'
+import {spyScroll} from './modules/spyScroll.js'
 const hamburgerBtn=document.querySelector('.hamburger')
 const nav = document.querySelector('.nav__container')
 const navItem = [...document.querySelectorAll('.nav__item')]
@@ -26,6 +29,9 @@ function coloseMenu(){
 window.addEventListener("DOMContentLoaded", () => {
     mobileMenu()
     coloseMenu()
+    svgHero()
+    animeHeroSvg()
+    spyScroll()
 });
 
 

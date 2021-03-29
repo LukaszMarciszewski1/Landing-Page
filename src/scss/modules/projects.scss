@@ -49,7 +49,9 @@
     justify-content: center;
     flex-direction: column;
 }
-
+.project__name{
+    padding: 15px 0 0;
+}
 .project__text{
     padding: 15px 0;
     border-bottom: 1px solid $colorLine;
@@ -108,6 +110,6 @@
         padding: 60px 20px;
     }
     .project{
-        padding: 15px;
+        padding:20px 15px;
     }
 }
