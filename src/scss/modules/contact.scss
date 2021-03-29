@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 80px 30px;
+    background-color: $backgroundColorSection;
 }
 
 .contact__container {
@@ -133,7 +134,7 @@
 }
 @media screen and(max-width:500px) {
     .contact {
-        padding: 60px 20px;
+        padding: 60px 10px;
     }
     .contact__container {
         padding:20px 15px;

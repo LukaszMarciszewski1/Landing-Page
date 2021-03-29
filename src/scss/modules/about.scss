@@ -9,6 +9,7 @@
     height: auto;
     padding: 80px 30px;
     overflow: hidden;
+    background-color: $backgroundColorSection;
 }
 .about__about-me-txt{
     max-width: 450px;
@@ -57,6 +58,6 @@
 
 @media screen and(max-width:500px) {
     .about {
-        padding: 60px 20px;
+        padding: 60px 10px;
     }
 }

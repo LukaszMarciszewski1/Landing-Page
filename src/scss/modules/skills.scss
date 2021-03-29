@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     padding: 80px 30px;
+    background-color: $backgroundColorSection;
 }
 
 .skills__container {
@@ -127,7 +128,7 @@
 
 @media screen and (max-width: 500px) {
     .skills {
-        padding: 60px 20px;
+        padding: 60px 10px;
     }
 
     .skills__container {

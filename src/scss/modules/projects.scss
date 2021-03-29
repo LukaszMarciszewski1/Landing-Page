@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     padding: 80px 30px;
+    background-color: $backgroundColorSection;
 }
 .project{
     @include shadow-container;
@@ -23,22 +24,25 @@
 }
 .project__img-container{
     @include flex-center;
+    @include shadow-container-img;
     height: 100%;
     width: 100%;
     max-width: 1000px;
-    border-radius: 10px;
-    background-color: $colorTxt;
-    .a{
+    border-radius: 15px;
+    padding: 2.5%;
+    // background-color: $colorLine;
+    .project__img{
         @include flex-center;
-        padding: 0.4%;
+        padding:0 5% 0 0;
         max-width: 100%;
-        border-radius: 10px;
         overflow: hidden;
         img{
-            border-radius: 10px;
             width: 100%;
             height: auto;
             user-select: none;
+        }
+        &:last-child{
+            padding:0 0 0 0
         }
     }
 }
@@ -107,9 +111,10 @@
 }
 @media screen and(max-width:500px){
     .projects{
-        padding: 60px 20px;
+        padding: 60px 10px;
     }
     .project{
         padding:20px 15px;
+        margin-bottom: 25px;
     }
 }
