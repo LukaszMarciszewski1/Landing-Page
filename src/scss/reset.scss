@@ -21,9 +21,9 @@
     transition: 0.2s;
     &:focus{
       outline: none;
-      background: rgb(37, 37, 39);
-      background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
-      color: $colorLightGreen;
+      // background: rgb(37, 37, 39);
+      // background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
+      // color: $colorLightGreen;
     }
     &:hover{
       background: rgb(37, 37, 39);
