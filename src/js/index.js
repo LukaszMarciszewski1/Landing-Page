@@ -21,6 +21,5 @@ window.addEventListener("DOMContentLoaded", () => {
     animations()
     spyScroll()
     // contact()
-
+    document.querySelector("#contact-form").addEventListener("submit", handleSubmit);
 });
-document.querySelector("#contact-form").addEventListener("submit", handleSubmit);

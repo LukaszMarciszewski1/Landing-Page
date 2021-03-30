@@ -1,33 +1,22 @@
-// export const contact = () => {
-//     fetch("https://formsubmit.co/ajax/lmarciszewski1@gmail.com", {
-//             method: "POST",
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'Accept': 'application/json'
-//             },
-//             body: JSON.stringify({
-//                 name: "FormSubmit",
-//                 message: "I'm from Devro LABS"
-//             })
-//         })
-//         .then(response => response.json())
-//         .then(data => console.log(data))
-//         .catch(error => console.log(error));
-// }
-// contact()
-
-
-
 export const handleSubmit = (e) => {
     e.preventDefault()
     let myForm = document.getElementById('contact-form');
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value
     let formData = new FormData(myForm)
-    fetch('lmarciszewski1@gmail.com', {
-        method: 'POST',
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-        },
-        body: new URLSearchParams(formData).toString()
-    }).then(() => console.log('Form successfully submitted')).catch((error) =>
-        alert(error))
+    fetch("https://formsubmit.co/ajax/lmarciszewski1@gmail.com", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                message: message
+            })
+            // body: new URLSearchParams(formData).toString()
+        })
+        // .then(response => response.json())
+        .then(() => console.log('Form successfully submitted')).catch((error) =>
+            alert(error))
 }
