@@ -23,31 +23,36 @@
 
 .content__title {
     position: relative;
-    margin-bottom: 60px;
-    color: $colorTxt;
-    font-size: 1.7rem;
+    margin-bottom: 5%;
+
     &::before {
         width: 50px;
         @include title-section-line;
         left: -80px
     }
+
     &::after{
         width: 50px;
         @include title-section-line;
         right: -80px
     }
+
     @media screen and (max-width:700px){
-        &::before, 
-        &::after {
-            width: 50px
+        .content__title {
+            &::before, 
+            &::after {
+                width: 50px
+            }
+            
+            &::before{
+                left: -70px
+            }
+            
+            &::after{
+                right: -70px
+            }
         }
-        &::before{
-            left: -70px
-        }
-        &::after{
-            right: -70px
-        }
-      }
+    }
 }
 
 
@@ -56,24 +61,14 @@
         grid-column: 1/-1;
         grid-row: 2/-1;
     }
-
-    .content__title {
-        margin-bottom: 50px;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and(max-width:700px) {
-    .main-content {
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and(max-width:500px) {
+    .main-content {
+        margin-bottom: 20px;
+    }
+    
     .content__title {
-        font-size: 1.2rem;
+        margin-bottom: 8%;
     }
 }

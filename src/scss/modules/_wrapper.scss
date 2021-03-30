@@ -8,24 +8,27 @@
     gap: 20px;
 
 }
+
+#copyright{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1480px){
     #wrapper{
         grid-template-columns: 1fr 200px;
     }
 }
+
 @media screen and (max-width: 1000px){
     #wrapper{
         grid-template-rows: 100px auto;
     }
 }
+
 @media screen and (max-width: 900px){
     #wrapper{
         grid-template-rows:70px auto;
         gap: 20px;
     }
-}
-#copyright{
-    text-align: center;
-    margin-bottom: 20px;
-   
 }

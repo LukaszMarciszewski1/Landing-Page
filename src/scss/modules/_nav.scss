@@ -30,6 +30,7 @@
     background-color: $backgroundColorSection;
     color: $colorLight;
     font-family: 'Roboto Mono', monospace;
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -44,11 +45,13 @@
         color: $colorLightGreen;
     }
 }
+
 .nav__item--active{
     background: rgb(37, 37, 39);
     background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
     color: $colorLightGreen;
 }
+
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -57,6 +60,9 @@
     background-color: transparent;
     display: none;
     z-index: 999;
+    &:hover{
+        background-color: transparent;
+    }
 }
 
 .hamburger__box {
@@ -124,20 +130,22 @@
         height: 100%;
         padding: 0;
     }
+
     .nav__container {
         flex-direction: row; 
     }
+
     .nav__item {
         height: 100%;
         width: calc(95% / 4);
         font-size: .9rem;
     }
-
 }
+
 @media screen and (max-width:600px){
     .nav{
         @include shadow-container;
-        background-color: darken($backgroundColorDark, 6%);
+        background-color: $backgroundColorSection;
         padding: 0 20px;
         display: flex;
         justify-content: flex-end;
@@ -146,7 +154,7 @@
 
     .nav__container{
         @include shadow-container;
-        background-color: darken($backgroundColorDark, 6%);
+        background-color: $backgroundColorSection;
         height: auto;
         flex-direction: column;
         padding: 20px 0;
@@ -157,14 +165,17 @@
         transition: transform .4s;
         z-index: 998;
     }
+
     .nav__item {
         width: 100%;
         padding: 20px 0;
     }
+
     .hamburger {
         display: inline-block;
     }
 }
+
 .nav__container--active{
     transform: translateY(70px);
     transition: transform .4s;

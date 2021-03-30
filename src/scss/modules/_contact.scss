@@ -1,16 +1,10 @@
-/*--------------- contact form --------------- */
-
 .contact {
-    scroll-behavior: smooth;
     @include shadow-container;
-    width: 100%;
-    height: auto;
+    @include container;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 80px 30px;
-    background-color: $backgroundColorSection;
 }
 
 .contact__container {
@@ -27,13 +21,16 @@
 .contact__info-title{
     margin: 40px 0 15px;
 }
+
 .contact__info-description {
     list-style: none;
     font-size: 1rem;
     color: $colorTxt;
     margin: 10px 0;
+
     li {
         margin: 10px 0;
+
         .contact__info-link {
             display: flex;
             align-items: center;
@@ -42,9 +39,11 @@
                 font-size: 1.2rem;
                 margin-left: 10px;
             }
+
             & > *:hover {
                 color: $colorLight
             }
+
            &:hover {
                 color: $colorLightGreen
             }
@@ -70,11 +69,10 @@
 .textarea {
     width: 100%;
     position: relative;
-    // border-bottom: 1px solid $colorLine;
 
     label {
         display: block;
-        font-size: .8em;
+        font-size: .85em;
         color: #999;
         padding-left: 5px;
         margin: 25px 0 5px;
@@ -102,19 +100,22 @@
 
 .send {
     @include shadow-btn;
+    @include btn-background;
     width: auto;
     margin-top: 30px;
     text-transform: uppercase;
     padding: 20px 30px;
-    background: transparent;
     color: $colorLight;
     font-size: 14px;
     letter-spacing: 2px;
     border-radius: 10px;
-    background: rgb(37, 37, 39);
-    background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
     align-self: center;
+    font-family: sans-serif;
+    &:hover{
+        color: $colorLightGreen
+    }
 }
+
 #result .success{
     @include result-message;
     color: $colorLightGreen;
@@ -123,8 +124,8 @@
 
 #result .error{
     @include result-message;
-    color: red;
-    background-color: rgba(red, 0.1);
+    color: $colorRed;
+    background-color: rgba($colorRed, 0.1);
 }
 
 @media screen and (max-width: 1100px){
@@ -133,21 +134,37 @@
         align-items: center;
         padding:40px;
     }
+
     #contact-form {
         margin-right: 0;
         width: 100%;
         max-width: 800px;
     }
+
     .contact__info-container{
         width: auto;
         align-self: flex-start;
     }
 }
+
 @media screen and(max-width:500px) {
-    .contact {
-        padding: 60px 10px;
-    }
     .contact__container {
         padding:20px 15px;
+    }
+
+    .contact__info-title{
+        margin: 20px 0 15px;
+        &:first-child{
+            margin: 40px 0 15px;
+        }
+    }
+
+    .location{
+        padding-bottom: 20px;
+    }
+    
+    .location,
+    .contact__info-link{
+        font-size: 0.95rem;
     }
 }

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Łukasz Marciszewski</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script> -->
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
+    <!-- <div id="preloader">
+        <div class="preloader__loading">LOADING</div>
+    </div> -->
     <div id="wrapper">
 
         <nav class="nav">
@@ -29,16 +33,16 @@
         <main class="main">
             <div class="main__container">
                 <section class="section main-content" id="o-mnie">
-                    <div class="name">
-                        <div class="name__text-container">
-                            <h1 class="name__my-name">Łukasz Marciszeski</h1>
-                            <h2 class="name__my-position">Front end developer</h2>
+                    <div class="about-top">
+                        <div class="about-top__text-container">
+                            <h1 class="h1 about-top__my-name">Łukasz Marciszeski</h1>
+                            <h3 class="h3 about-top__my-position">Front end developer</h3>
 
                         </div>
                     </div>
-                    <div class="about">
-                        <div class="about__about-me-txt">
-                            <h2>O mnie</h2>
+                    <div class="about-bottom">
+                        <div class="about-bottom__about-me-txt">
+                            <h2 class="h2">O mnie</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis illum, sint odit
                                 consequatur libero deleniti quaerat vitae quibusdam corporis, soluta esse, nobis ut
@@ -54,7 +58,7 @@
 
 
                 <section class="projects main-content section" id="projekty">
-                    <h2 class="content__title">Projekty</h2>
+                    <h2 class="h2 content__title">Projekty</h2>
                     <div class="project section__content">
                         <div class="project__img-container">
                             <div class="project__img">
@@ -66,7 +70,7 @@
                             </div>
                         </div>
                         <div class="project__text-container">
-                            <h3 class="project__name">Aplikacja do wycen dla drukarni</h3>
+                            <h3 class="h3 project__name">Aplikacja do wycen dla drukarni</h3>
                             <p class="project__text">Kalkulator do oblicznaia cen bazowych dla produktów poligraficznych
                             </p>
                             <div class="project__links">
@@ -88,7 +92,7 @@
                             </div>
                         </div>
                         <div class="project__text-container">
-                            <h3 class="project__name">Aplikacja do wycen dla drukarni</h3>
+                            <h3 class="h3 project__name">Aplikacja do wycen dla drukarni</h3>
                             <p class="project__text">Kalkulator do oblicznaia cen bazowych dla produktów poligraficznych
                             </p>
                             <div class="project__links">
@@ -110,7 +114,7 @@
                             </div>
                         </div>
                         <div class="project__text-container">
-                            <h3 class="project__name">Aplikacja do wycen dla drukarni</h3>
+                            <h3 class="h3 project__name">Aplikacja do wycen dla drukarni</h3>
                             <p class="project__text">Kalkulator do oblicznaia cen bazowych dla produktów poligraficznych
                             </p>
                             <div class="project__links">
@@ -123,10 +127,10 @@
                 </section>
 
                 <section class="skills main-content section" id="umiejętności">
-                    <h2 class="content__title">Umiejętności</h2>
+                    <h2 class="h2 content__title">Umiejętności</h2>
                     <div class="skills__container section__content">
                         <div class="skills__content">
-                            <h3 class="skills__title">Technologie</h3>
+                            <h3 class="h3 skills__title">Technologie</h3>
                             <div class="skills__items">
                                 <div class="skills__item">
                                     <p class="skills__name">HTML5</p>
@@ -155,7 +159,7 @@
                             </div>
                         </div>
                         <div class="skills__content">
-                            <h3 class="skills__title">Programy graficzne</h3>
+                            <h3 class="h3 skills__title">Programy graficzne</h3>
                             <div class="skills__items">
                                 <div class="skills__item">
                                     <p class="skills__name">Photoshop</p>
@@ -175,27 +179,8 @@
                 </section>
 
                 <section class="contact main-content section" id="kontakt">
-                    <h2 class="content__title">Kontakt</h2>
+                    <h2 class="h2 content__title">Kontakt</h2>
                     <div class="contact__container section__content">
-
-                        <!-- <form name="contact-form" id="contact-form"
-                            action="https://formsubmit.co/lmarciszewski1@gmail.com" method="POST">
-                            <div class="textarea">
-                                <label for="contact-name">Imię :</label>
-                                <input name="name" type="text" id="name" required>
-                            </div>
-                            <div class="textarea">
-                                <label for="contact-email">Email :</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                            <div class="textarea">
-                                <label for="contact-project">Wiadomość :</label>
-                                <textarea type="text" name="message" id="message" rows="6"></textarea>
-                            </div>
-                            <input name="_formsubmit_id" type="text" style="display: none">
-                            <button type="submit" name="contact-submit" id="contact-submit"
-                                class="send wow fadeInUp">Wyślij wiadomość</button>
-                        </form> -->
 
                         <form name="contact" id="contact-form">
                             <div id="result">
@@ -210,7 +195,8 @@
                             </div>
                             <div class="textarea">
                                 <label for="message">Wiadomość :</label>
-                                <textarea class="contact-txt" type="text" name="message" id="message" rows="6"></textarea>
+                                <textarea class="contact-txt" type="text" name="message" id="message"
+                                    rows="6"></textarea>
                             </div>
                             <input type="text" name="_honey" style="display:none">
                             <input name="_formsubmit_id" type="text" style="display: none">
@@ -220,11 +206,11 @@
                         </form>
 
                         <div class="contact__info-container">
-                            <h3 class="contact__info-title">Adres</h3>
+                            <h4 class="h4 contact__info-title">Adres</h4>
                             <p class="contact__info-description location">Warszawa <ion-icon name="location-outline">
                                 </ion-icon>
                             </p>
-                            <h3 class="contact__info-title">Informacje kontaktowe</h3>
+                            <h4 class="h4 contact__info-title">Informacje kontaktowe</h4>
                             <ul class="contact__info-description">
                                 <li>
                                     <a class="contact__info-link" href="mailto:lmarciszewski1@gmail.com">
@@ -250,6 +236,18 @@
             </div>
         </main>
     </div>
+    <script>
+        // paceOptions = {
+        //     ajax: true,
+        //     document: true,
+        //     eventLag: false
+        // };
+
+        // Pace.on('done', function () {
+        //    const loading = document.querySelector('.preloader__loading')
+        //    const preloader = document.getElementById('preloader')
+        // });
+    </script>
 </body>
 
 </html>

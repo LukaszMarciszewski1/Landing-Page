@@ -5,6 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+
   body{
     background-color: $backgroundColor;
     color: $colorLight;
@@ -21,58 +22,67 @@
     transition: 0.2s;
     &:focus{
       outline: none;
-      // background: rgb(37, 37, 39);
-      // background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
-      // color: $colorLightGreen;
-    }
-    &:hover{
-      background: rgb(37, 37, 39);
-      background: linear-gradient(0deg, rgb(35, 36, 37) 0%, rgba(48,49,54,1) 100%);
-      color: $colorLightGreen;
     }
 }
+
 p{
   font-size: .9rem;
   color: $colorTxt;
   font-weight: 300;
   line-height: 1.6rem;
 }
+
 a{
   font-size: 1rem;
   color: $colorLight;
   text-decoration: none;
   letter-spacing: 0px;
+  
   &:hover{
     color: $colorLightGreen;
   }
 }
-// h2{
-//   text-transform: uppercase;
-// }
-@media screen and (max-width: 1480px){
-  // p{
-  //   line-height: 1.5rem;
-  // }
+
+.h1{
+  font-size: 1.8rem;
 }
-@media screen and (max-width: 1025px){
-  h3{
+
+.h2{
+  font-size: 1.6rem;
+}
+
+.h3{
+  font-size: 1.2rem;
+}
+
+.h4{
+  font-size: 1.1rem;
+}
+
+@media screen and(max-width:500px){
+  body{
+    letter-spacing: 0.8px;
+  }
+
+  .h1{
+    font-size: 1.4rem;
+  }
+
+  .h2{
     font-size: 1.2rem;
   }
-  p{
-    line-height: 1.4rem;
-  }
-}
-@media screen and (max-width: 700px){
 
-}
-@media screen and(max-width:500px){
-  h3{
+  .h3{
     font-size: 1.05rem;
   }
-  p{
-    line-height: 1.3rem;
-    font-size: 14px;
+
+  .h4{
+    font-size: 1rem;
   }
   
+  p{
+    font-size: 14px;
+      line-height: 1.4rem;
+  }
 }
 

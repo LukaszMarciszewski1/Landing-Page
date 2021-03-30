@@ -1,13 +1,10 @@
 .skills {
     @include shadow-container;
-    width: 100%;
-    height: auto;
+    @include container;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 30px;
-    background-color: $backgroundColorSection;
 }
 
 .skills__container {
@@ -15,8 +12,8 @@
     @include flex-center;
     flex-direction: column;
     width: 100%;
-    max-width: 1080px;
-    padding: 40px;
+    max-width: 1060px;
+    padding: 30px;
     border-radius: 15px;
     background-color: $backgroundColorContainer;
 }
@@ -79,13 +76,7 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
-    // .skills__container{
-    //     width: 100%;
-    // }
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
     .skills__items {
         grid-template-columns: repeat(3, 1fr);
         gap: .7rem;
@@ -105,10 +96,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .skills__container {
-        padding: 30px;
-    }
-
     .skills__title {
         margin: 0 0 20px 40px;
     }
@@ -127,10 +114,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .skills {
-        padding: 60px 10px;
-    }
-
     .skills__container {
         padding:20px 15px;
     }
@@ -138,5 +121,4 @@
     .skills__items {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }

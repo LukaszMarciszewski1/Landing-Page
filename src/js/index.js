@@ -20,6 +20,5 @@ window.addEventListener("DOMContentLoaded", () => {
     showSvg()
     animations()
     spyScroll()
-    // contact()
     document.querySelector("#contact-form").addEventListener("submit", handleSubmit);
 });

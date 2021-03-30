@@ -4,12 +4,12 @@ export const handleSubmit = (e) => {
     let email = document.getElementById('email').value;
     let message = document.getElementById('message').value;
     const result = document.getElementById('result');
-    const arr = [...document.querySelectorAll('.contact-txt')];
+    const contactTxtValue = [...document.querySelectorAll('.contact-txt')];
 
     const clearInputs = () => {
         setTimeout(() => {
             result.innerHTML = '';
-            arr.forEach(el => el.value = '')
+            contactTxtValue.forEach(el => el.value = '')
         }, 5000)
     }
 
@@ -40,5 +40,4 @@ export const handleSubmit = (e) => {
                 clearInputs()
             }
         })
-
 }
