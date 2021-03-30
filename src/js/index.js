@@ -1,8 +1,16 @@
 import '../scss/style.scss';
-import {mobileMenu} from './modules/mobileMenu.js'
-import {showSvg} from './modules/showSvg.js'
-import {animations} from './modules/animations.js'
-import {spyScroll} from './modules/spyScroll.js'
+import {
+    mobileMenu
+} from './modules/mobileMenu.js'
+import {
+    showSvg
+} from './modules/showSvg.js'
+import {
+    animations
+} from './modules/animations.js'
+import {
+    spyScroll
+} from './modules/spyScroll.js'
 
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -11,5 +19,3 @@ window.addEventListener("DOMContentLoaded", () => {
     animations()
     spyScroll()
 });
-
-

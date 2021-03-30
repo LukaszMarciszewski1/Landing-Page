@@ -4,6 +4,7 @@ import {
 import {
   ScrollTrigger
 } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export const animations = () => {
@@ -58,35 +59,34 @@ export const animations = () => {
 
       //sections title 
       sectionTitle.forEach(item => {
-      gsap.fromTo(item, {
-        y: '+=50',
-        opacity: 0
-      }, {
-        y: 0,
-        opacity: 1,
-        stagger: 0.2,
-        duration: 0.6,
-        ease: 'easeInOut',
-        scrollTrigger: {
-          trigger: item,
-          start: '15% bottom',
-        }
-      });
-    })
+        gsap.fromTo(item, {
+          y: '+=50',
+          opacity: 0
+        }, {
+          y: 0,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 0.6,
+          ease: 'easeInOut',
+          scrollTrigger: {
+            trigger: item,
+            start: '15% bottom',
+          }
+        });
+      })
 
-     //about section
-      gsap.fromTo(heroTxt.children, {
-        y: '+=100',
-        opacity: 0
-      }, {
-        y: 0,
-        opacity: 1,
-        stagger: 0.2,
-        duration: 0.7,
-        delay:1,
-        ease: 'easeInOut',
-      });
-
+      //about section
+      // gsap.fromTo(heroTxt.children, {
+      //   y: '+=100',
+      //   opacity: 0
+      // }, {
+      //   y: 0,
+      //   opacity: 1,
+      //   stagger: 0.2,
+      //   duration: 0.7,
+      //   delay: 1,
+      //   ease: 'easeInOut',
+      // });
 
     }
   }

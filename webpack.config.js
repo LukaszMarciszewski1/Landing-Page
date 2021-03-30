@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
@@ -22,8 +22,7 @@ module.exports = {
     },
 
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
@@ -41,25 +40,28 @@ module.exports = {
                 use: {
                     loader: 'file-loader',
                     options: {
-                      name: 'images/[name].[ext]',
-                      outputPath: 'images',
+                        name: 'images/[name].[ext]',
+                        outputPath: 'images',
                     }
-                  }
+                }
             },
         ]
     },
 
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({template: './src/index.html'}),
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css'
         }),
-        // new CopyPlugin({
-        //     patterns: [
-        //         { from: 'images', to: 'images' },
-        //     ],
-        //   }),
+        new CopyPlugin({
+            patterns: [{
+                from: './public/images',
+                to: 'images'
+            }, ],
+        }),
     ]
 };
