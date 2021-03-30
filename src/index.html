@@ -33,15 +33,16 @@
                         <div class="name__text-container">
                             <h1 class="name__my-name">Łukasz Marciszeski</h1>
                             <h2 class="name__my-position">Front end developer</h2>
-    
+
                         </div>
                     </div>
                     <div class="about">
                         <div class="about__about-me-txt">
-                            <h3>O mnie</h3>
+                            <h2>O mnie</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis illum, sint odit
-                                consequatur libero deleniti quaerat vitae quibusdam corporis, soluta esse, nobis ut ipsa.
+                                consequatur libero deleniti quaerat vitae quibusdam corporis, soluta esse, nobis ut
+                                ipsa.
                                 Molestiae, tempore. Iusto, consequuntur ipsam?
                             </p>
                         </div>
@@ -58,7 +59,7 @@
                         <div class="project__img-container">
                             <div class="project__img">
                                 <img src="images/kalkulator-desktop.png" alt="">
-                                
+
                             </div>
                             <div class="project__img">
                                 <img src="images/kalkulator-mobile.png" alt="">
@@ -176,8 +177,9 @@
                 <section class="contact main-content section" id="kontakt">
                     <h2 class="content__title">Kontakt</h2>
                     <div class="contact__container section__content">
-                        <form name="contact-form" id="contact-form" method="POST"
-                            action="https://formsubmit.io/send/ludwik123456789@gmail.com">
+
+                        <!-- <form name="contact-form" id="contact-form"
+                            action="https://formsubmit.co/lmarciszewski1@gmail.com" method="POST">
                             <div class="textarea">
                                 <label for="contact-name">Imię :</label>
                                 <input name="name" type="text" id="name" required>
@@ -188,12 +190,31 @@
                             </div>
                             <div class="textarea">
                                 <label for="contact-project">Wiadomość :</label>
-                                <textarea type="text" name="contact-message" id="contact-message" rows="6"></textarea>
+                                <textarea type="text" name="message" id="message" rows="6"></textarea>
+                            </div>
+                            <input name="_formsubmit_id" type="text" style="display: none">
+                            <button type="submit" name="contact-submit" id="contact-submit"
+                                class="send wow fadeInUp">Wyślij wiadomość</button>
+                        </form> -->
+
+                        <form name="contact" id="contact-form" data-netlify="true" method="POST">
+                            <div class="textarea">
+                                <label for="contact-name">Imię :</label>
+                                <input name="name" type="text" id="name" required>
+                            </div>
+                            <div class="textarea">
+                                <label for="contact-email">Email :</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="textarea">
+                                <label for="contact-project">Wiadomość :</label>
+                                <textarea type="text" name="message" id="message" rows="6"></textarea>
                             </div>
                             <input name="_formsubmit_id" type="text" style="display: none">
                             <button type="submit" name="contact-submit" id="contact-submit"
                                 class="send wow fadeInUp">Wyślij wiadomość</button>
                         </form>
+
                         <div class="contact__info-container">
                             <h3 class="contact__info-title">Adres</h3>
                             <p class="contact__info-description location">Warszawa <ion-icon name="location-outline">
@@ -220,7 +241,7 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <p id="copyright"> &copy;&nbsp2021&nbspŁukasz&nbspMarciszewski</p>
             </div>
         </main>

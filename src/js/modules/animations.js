@@ -60,7 +60,7 @@ export const animations = () => {
       //sections title 
       sectionTitle.forEach(item => {
         gsap.fromTo(item, {
-          y: '+=50',
+          y: '+=60',
           opacity: 0
         }, {
           y: 0,
