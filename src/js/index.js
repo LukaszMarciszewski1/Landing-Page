@@ -19,7 +19,7 @@ import {
     preloader
 } from './modules/preloader';
 
-preloader()
+// preloader()
 window.addEventListener("DOMContentLoaded", () => {
     mobileMenu()
     showSvg()

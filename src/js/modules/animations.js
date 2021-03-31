@@ -10,12 +10,12 @@ gsap.registerPlugin(ScrollTrigger);
 export const animations = () => {
 
   const animeHero = () => {
-    const main = document.querySelectorAll('.main')
+    const wrapper = document.getElementById('wrapper')
     const topHero = document.querySelector('.about-top__text-container')
     const heroTxt = document.querySelector('.about-bottom__txt-container');
     const line = document.querySelector('.l1');
     const svgContainer = document.querySelector('.intro-container');
-    const svgHero = document.querySelector('.intro-svg');
+    const svg = document.querySelector('.intro-svg');
     const rec1 = document.getElementById('rectangle1');
     const rec2 = document.getElementById('rectangle2');
     const rec3 = document.getElementById('rectangle3');
@@ -24,13 +24,13 @@ export const animations = () => {
     const out3 = document.getElementById('outline3');
     const rotateElements = [rec1, rec2, rec3, out1, out2, out3];
 
-    gsap.set(main, {
-      visibility: "visible"
-    })
+      gsap.set(wrapper, {
+        visibility: "visible"
+      })
 
     //container svg
     if (window.innerWidth > 700) {
-      gsap.set([svgContainer, svgHero, heroTxt.children, line, topHero.children], {
+      gsap.set([svgContainer, svg, heroTxt.children, line, topHero.children], {
         autoAlpha: 0,
       })
 
@@ -55,7 +55,7 @@ export const animations = () => {
           autoAlpha: 1,
           delay: 0.5
         }, '-=0.70')
-        .to(svgHero, {
+        .to(svg, {
           duration: 0.5,
           delay: 0.1,
           autoAlpha: 1,
@@ -79,6 +79,7 @@ export const animations = () => {
           autoAlpha: 1
         })
     }
+    
     //rotate elemnets in svg
     rotateElements.forEach(el => {
       el.style.transform = 'scale(1.15)'
