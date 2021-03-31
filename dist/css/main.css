@@ -304,6 +304,7 @@
     background-color: #5c5c5c; }
 
 .intro-container {
+  visibility: hidden;
   -webkit-box-shadow: 0px 2px 17px -2px black;
   box-shadow: 0px 2px 17px -2px black;
   width: 100%;

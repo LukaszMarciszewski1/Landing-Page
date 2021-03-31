@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const animations = () => {
 
   const animeHero = () => {
+    const main = document.querySelectorAll('.main')
     const topHero = document.querySelector('.about-top__text-container')
     const heroTxt = document.querySelector('.about-bottom__txt-container');
     const line = document.querySelector('.l1');
@@ -22,10 +23,15 @@ export const animations = () => {
     const out2 = document.getElementById('outline2');
     const out3 = document.getElementById('outline3');
     const rotateElements = [rec1, rec2, rec3, out1, out2, out3];
+
+    gsap.set(main, {
+      visibility: "visible"
+    })
+
     //container svg
     if (window.innerWidth > 700) {
       gsap.set([svgContainer, svgHero, heroTxt.children, line, topHero.children], {
-        autoAlpha: 0
+        autoAlpha: 0,
       })
 
       const tl = gsap.timeline({
@@ -60,10 +66,10 @@ export const animations = () => {
           }, {
             y: "+=50",
             stagger: 0.3,
-            duration: 0.6,
+            duration: 0.5,
             autoAlpha: 1
           },
-          '-=0.30'
+          '-=0.5'
         )
         .fromTo(line, {
           height: '0%',
