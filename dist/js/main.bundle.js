@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1008e230dbd1eacee0ba";
+/******/ 	var hotCurrentHash = "7b364b3ade8287944c94";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -939,7 +939,7 @@ eval("\n\n/* eslint-disable */\nfunction normalizeUrl(pathComponents) {\n  retur
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _modules_mobileMenu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/mobileMenu.js */ \"./src/js/modules/mobileMenu.js\");\n/* harmony import */ var _modules_showSvg_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/showSvg.js */ \"./src/js/modules/showSvg.js\");\n/* harmony import */ var _modules_animations_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/animations.js */ \"./src/js/modules/animations.js\");\n/* harmony import */ var _modules_spyScroll_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/spyScroll.js */ \"./src/js/modules/spyScroll.js\");\n/* harmony import */ var _modules_contact_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/contact.js */ \"./src/js/modules/contact.js\");\n/* harmony import */ var _modules_preloader_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/preloader.js */ \"./src/js/modules/preloader.js\");\n\n\n\n\n\n\n\n\n// preloader()\nwindow.addEventListener(\"DOMContentLoaded\", () => {\n\n    Object(_modules_mobileMenu_js__WEBPACK_IMPORTED_MODULE_1__[\"mobileMenu\"])();\n    Object(_modules_showSvg_js__WEBPACK_IMPORTED_MODULE_2__[\"showSvg\"])();\n    Object(_modules_animations_js__WEBPACK_IMPORTED_MODULE_3__[\"animations\"])();\n    Object(_modules_spyScroll_js__WEBPACK_IMPORTED_MODULE_4__[\"spyScroll\"])();\n    document.querySelector(\"#contact-form\").addEventListener(\"submit\", _modules_contact_js__WEBPACK_IMPORTED_MODULE_5__[\"handleSubmit\"]);\n});\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _modules_mobileMenu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/mobileMenu.js */ \"./src/js/modules/mobileMenu.js\");\n/* harmony import */ var _modules_showSvg_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/showSvg.js */ \"./src/js/modules/showSvg.js\");\n/* harmony import */ var _modules_animations_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/animations.js */ \"./src/js/modules/animations.js\");\n/* harmony import */ var _modules_spyScroll_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/spyScroll.js */ \"./src/js/modules/spyScroll.js\");\n/* harmony import */ var _modules_contact_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/contact.js */ \"./src/js/modules/contact.js\");\n\n\n\n\n\n\n\n\nObject(_modules_mobileMenu_js__WEBPACK_IMPORTED_MODULE_1__[\"mobileMenu\"])();\nObject(_modules_showSvg_js__WEBPACK_IMPORTED_MODULE_2__[\"showSvg\"])();\nObject(_modules_animations_js__WEBPACK_IMPORTED_MODULE_3__[\"animations\"])();\nObject(_modules_spyScroll_js__WEBPACK_IMPORTED_MODULE_4__[\"spyScroll\"])();\ndocument.querySelector(\"#contact-form\").addEventListener(\"submit\", _modules_contact_js__WEBPACK_IMPORTED_MODULE_5__[\"handleSubmit\"]);\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -979,18 +979,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./src/js/modules/preloader.js":
-/*!*************************************!*\
-  !*** ./src/js/modules/preloader.js ***!
-  \*************************************/
-/*! exports provided: preloader */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"preloader\", function() { return preloader; });\nconst preloader = () => {\n  const preload = document.querySelector('.preloader');\n\n  preload.classList.add('preloader-show');\n  window.addEventListener('load', () => {\n    setTimeout(() => {\n      preload.classList.remove('preloader-show');\n    }, 1000);\n  });\n};\n\n//# sourceURL=webpack:///./src/js/modules/preloader.js?");
-
-/***/ }),
-
 /***/ "./src/js/modules/showSvg.js":
 /*!***********************************!*\
   !*** ./src/js/modules/showSvg.js ***!
@@ -1023,7 +1011,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1617221442643\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.i, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/scss/style.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1617222049649\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.i, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/scss/style.scss?");
 
 /***/ })
 
