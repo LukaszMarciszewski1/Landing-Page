@@ -30,9 +30,13 @@
     background-color: $backgroundColorSection;
     color: $colorLight;
     font-family: 'Roboto Mono', monospace;
-
+    border: $borderContainer;
     &:last-child {
         margin-bottom: 0;
+        border-bottom: none;
+    }
+    &:first-child{
+        border-top: none;
     }
 
     &:hover {
@@ -142,7 +146,7 @@
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
     .nav{
         @include shadow-container;
         background-color: $backgroundColorSection;
@@ -169,6 +173,7 @@
     .nav__item {
         width: 100%;
         padding: 20px 0;
+        border: none;
     }
 
     .hamburger {

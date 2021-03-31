@@ -1,6 +1,7 @@
 export const showSvg = () => {
-    const svgContainer = document.querySelector('.intro-img')
+    const svgContainer = document.querySelector('.intro-container')
     const svg = document.createElement('div');
+    svg.className = 'intro-svg'
     svg.innerHTML = `
     <svg width="1153" height="494" viewBox="0 0 1153 494" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="static" clip-path="url(#clip0)">
@@ -48,5 +49,5 @@ export const showSvg = () => {
     </defs>
     </svg>
 `
-svgContainer.appendChild(svg);
+    svgContainer.appendChild(svg);
 }

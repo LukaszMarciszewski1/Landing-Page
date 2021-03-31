@@ -15,7 +15,12 @@ import {
 import {
     handleSubmit
 } from './modules/contact.js'
+import {
+    preloader
+} from './modules/preloader.js'
+// preloader()
 window.addEventListener("DOMContentLoaded", () => {
+
     mobileMenu()
     showSvg()
     animations()

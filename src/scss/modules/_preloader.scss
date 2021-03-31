@@ -1,55 +1,57 @@
-// .pace {
-//     pointer-events: none;
-//     user-select: none;
-//     z-index: 2000;
-//     position: fixed;
-//     margin: auto;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     width: 400px;
-//     border: 0px;
-//     height: 1px;
-//     overflow: hidden;
-//     background:$backgroundColor;
-//   }
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: $backgroundColor;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1000;
+  }
+  .preloader-show{
+      display: flex;
+  }
+.preloader__loading {
+    width: 8vmax;
+    height: 8vmax;
+    border-right: 4px solid $colorLight;
+    border-radius: 100%;
+    animation: spinRight 800ms linear infinite;
+    
+    &:before, &:after {
+      content: '';
+      width: 6vmax;
+      height: 6vmax;
+      display: block;
+      position: absolute;
+      top: calc(50% - 3vmax);
+      left: calc(50% - 3vmax);
+      border-left: 3px solid $colorLight;
+      border-radius: 100%;
+      animation: spinLeft 800ms linear infinite;
+    }
+    
+    &:after {
+      width: 4vmax;
+      height: 4vmax;
+      top: calc(50% - 2vmax);
+      left: calc(50% - 2vmax);
+      border: 0;
+      border-right: 2px solid $colorLight;
+      animation: none;
+    }
+  }
   
-//   .pace .pace-progress {
-//     box-sizing: border-box;
-//     transform: translate3d(0, 0, 0);
-//     max-width: 400px;
-//     position: fixed;
-//     z-index: 2000;
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     right: 100%;
-//     height: 100%;
-//     width: 100%;
-//     background: grey;
-//   }
+  @keyframes spinLeft {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(720deg);}
+  }
   
-//   .pace.pace-inactive {
-//     display: none;
-//   }
-// #preloader{
-//     width:100%;
-//     height:100vh;
-//     background:$backgroundColor;
-//     overflow:hidden;
-//     position:fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: 1000;
-//     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-//   }
-  
-//   .preloader__loading {
-//       position: absolute;
-//       top: 40%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       color: #fff;
-//       z-index: 2000;
-//   }
+  @keyframes spinRight {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+  }

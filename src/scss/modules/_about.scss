@@ -2,13 +2,14 @@
     @include shadow-container;
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
     justify-self: flex-start;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 30px;
     position: relative;
     background-color: $backgroundColorSection;
-    display: flex;
-    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.1);
     overflow: hidden;
 }
 
@@ -23,7 +24,7 @@
 }
 
 .about-top__my-position {
-    margin-top: 15px;
+    margin-top: 10px;
     font-weight: 400;
     font-size: .9rem;
 }
@@ -34,25 +35,36 @@
     @include flex-center;
 }
 
-.about-bottom__about-me-txt{
+.about-bottom__txt-container{
+    position: relative;
     max-width: 450px;
     padding: 30px 100px 30px 30px;
-    border-left: 1px solid $colorLine;
-
+    // border-left: 1px solid $colorLine;
     .h2{
         margin-bottom: 15px;
         font-size: 1.3rem;
+        background-color: $backgroundColorSection;
+    }
+    .l1{
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform-origin: 0;
+        width: 1px;
+        height: 0;
+        background-color: $colorLine
     }
 }
 
-.intro-img{
+.intro-container{
     @include  shadow-container;
     width: 100%;
     max-width: 800px;
-    padding: 5% 3%;
+    padding: 5.5% 3%;
     border-radius: 15px;
     background-color: $backgroundColorContainer;
-
+    border: $borderContainer;
         svg{
             width: 100%;
             height: auto;
@@ -80,12 +92,14 @@
         flex-direction: column-reverse;
         align-items: flex-start;
     }
-
-    .intro-img{
+    .l1{
+        display: none
+    }
+    .intro-container{
         max-width: 100%;
     }
 
-    .about-bottom__about-me-txt{
+    .about-bottom__txt-container{
         max-width: 600px;
         padding: 30px 10px 0 10px;
         border-left: none;
@@ -101,4 +115,8 @@
         margin-bottom: 20px;
         padding: 20px;
     }
+    .intro-container{
+        padding: 7% 3%;
+    }
+
 }

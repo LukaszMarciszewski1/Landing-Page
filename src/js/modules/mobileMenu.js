@@ -16,14 +16,15 @@ export const mobileMenu = () => {
 
         })
     }
+    
     const coloseMenu = () => {
         navItem.forEach(item => item.addEventListener('click', () => {
+            if(navContainer.classList.contains('nav__container--active')){}
             navContainer.classList.remove('nav__container--active');
             hamburgerBtn.classList.remove('hamburger--active');
         }))
     }
-
+ 
     openMenu();
     coloseMenu();
-
 }
