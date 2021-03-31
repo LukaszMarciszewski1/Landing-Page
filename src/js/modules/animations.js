@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const animations = () => {
 
   const animeHero = () => {
+    const topHero = document.querySelector('.about-top__text-container')
     const heroTxt = document.querySelector('.about-bottom__txt-container');
     const line = document.querySelector('.l1');
     const svgContainer = document.querySelector('.intro-container');
@@ -23,46 +24,54 @@ export const animations = () => {
     const rotateElements = [rec1, rec2, rec3, out1, out2, out3];
     //container svg
     if (window.innerWidth > 700) {
-    gsap.set([svgContainer, svgHero, heroTxt.children, line], {
-      autoAlpha: 0
-    })
+      gsap.set([svgContainer, svgHero, heroTxt.children, line, topHero.children], {
+        autoAlpha: 0
+      })
 
-    const tl = gsap.timeline({
-      defaults: {
-        ease: 'power3.out'
-      }
-    });
-
-    tl.fromTo(svgContainer, {
-        y: "-50",
-        scaleY: 0
-      }, {
-        y: "+=50",
-        scaleY: 1,
-        duration: 0.5,
-        autoAlpha: 1
-      })
-      .to(svgHero, {
-        duration: 0.5,
-        delay: 0.2,
-        autoAlpha: 1,
-        ease: "none",
-      })
-      .fromTo(heroTxt.children, {
-        y: '-50',
-      }, {
-        y: "+=50",
-        stagger: 0.2,
-        duration: 0.7,
-        autoAlpha: 1
-      })
-      .fromTo(line, {
-        height: '0%',
-      }, {
-        height: '+=100%',
-        duration: 0.5,
-        autoAlpha: 1
+      const tl = gsap.timeline({
+        defaults: {
+          ease: 'elastic.outout(1,0.3)'
+        }
       });
+      tl.fromTo(topHero.children, {}, {
+          delay: 0.3,
+          duration: 0.4,
+          stagger: 0.3,
+          autoAlpha: 1
+        })
+        .fromTo(svgContainer, {
+          y: "-50",
+          scaleY: 0
+        }, {
+          y: "+=50",
+          scaleY: 1,
+          duration: 0.5,
+          autoAlpha: 1,
+          delay: 0.5
+        }, '-=0.70')
+        .to(svgHero, {
+          duration: 0.5,
+          delay: 0.1,
+          autoAlpha: 1,
+          ease: "none",
+        })
+        .fromTo(heroTxt.children, {
+            y: '-50',
+          }, {
+            y: "+=50",
+            stagger: 0.3,
+            duration: 0.6,
+            autoAlpha: 1
+          },
+          '-=0.30'
+        )
+        .fromTo(line, {
+          height: '0%',
+        }, {
+          height: '+=100%',
+          duration: 0.3,
+          autoAlpha: 1
+        })
     }
     //rotate elemnets in svg
     rotateElements.forEach(el => {
@@ -75,7 +84,7 @@ export const animations = () => {
         duration: 10,
         ease: "none",
         repeat: -1,
-        delay: 0.4
+        delay: 2
       });
     });
   }

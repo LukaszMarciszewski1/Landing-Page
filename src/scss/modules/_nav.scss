@@ -157,16 +157,16 @@
     }
 
     .nav__container{
-        @include shadow-container;
+        // @include shadow-container;
         background-color: $backgroundColorSection;
         height: auto;
         flex-direction: column;
-        padding: 20px 0;
+        padding:0;
         position: absolute;
         left: 0;
         top:0;
         transform: translateY(-100%);
-        transition: transform .4s;
+        transition: transform .5s;
         z-index: 998;
     }
 
@@ -182,6 +182,6 @@
 }
 
 .nav__container--active{
-    transform: translateY(70px);
+    transform: translateY(59px);
     transition: transform .4s;
 }
