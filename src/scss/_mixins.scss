@@ -11,10 +11,13 @@ align-items: center;
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding: 6% 4%;
+    padding: 7% 4%;
     overflow: hidden;
     background-color: $backgroundColorSection;
     border: 1px solid rgba(128, 128, 128, 0.1);
+    @media screen and(max-width:1300px) {
+        padding: 12% 4%;
+    }
     @media screen and(max-width:500px) {
         padding: 8% 4%;
     }

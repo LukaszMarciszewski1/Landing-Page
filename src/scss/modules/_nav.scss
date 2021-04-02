@@ -30,7 +30,7 @@
     background-color: $backgroundColorSection;
     color: $colorLight;
     font-family: 'Roboto Mono', monospace;
-    border: $borderContainer;
+    border: 1px solid rgba(128, 128, 128, 0.1);;
     &:last-child {
         margin-bottom: 0;
         border-bottom: none;
@@ -157,7 +157,7 @@
     }
 
     .nav__container{
-        // @include shadow-container;
+        @include shadow-container;
         background-color: $backgroundColorSection;
         height: auto;
         flex-direction: column;

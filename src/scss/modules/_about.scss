@@ -26,7 +26,7 @@
 .about-top__my-position {
     margin-top: 10px;
     font-weight: 400;
-    font-size: .9rem;
+    font-size: .95rem
 }
 
 .about-bottom {
@@ -39,10 +39,15 @@
     position: relative;
     max-width: 470px;
     padding: 10px 100px 10px 30px;
-    .h2{
+    .about-bottom__title{
         margin-bottom: 15px;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         background-color: $backgroundColorSection;
+    }
+    .about-bottom__txt{
+        font-size: 1.01rem;
+        font-family: 'Roboto', sans-serif;
+        line-height: 2.1rem;
     }
     .l1{
         position: absolute;
@@ -58,7 +63,7 @@
 .intro-container{
     @include  shadow-container;
     width: 100%;
-    max-width: 800px;
+    max-width: 830px;
     padding: 5% 3%;
     border-radius: 15px;
     background-color: $backgroundColorContainer;

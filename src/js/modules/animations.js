@@ -24,9 +24,9 @@ export const animations = () => {
     const out3 = document.getElementById('outline3');
     const rotateElements = [rec1, rec2, rec3, out1, out2, out3];
 
-      gsap.set(wrapper, {
-        visibility: "visible"
-      })
+    gsap.set(wrapper, {
+      visibility: "visible"
+    })
 
     //container svg
     if (window.innerWidth > 700) {
@@ -68,8 +68,7 @@ export const animations = () => {
             stagger: 0.3,
             duration: 0.5,
             autoAlpha: 1
-          },
-          '-=0.5'
+          }, '-=0.5'
         )
         .fromTo(line, {
           height: '0%',
@@ -77,9 +76,9 @@ export const animations = () => {
           height: '+=100%',
           duration: 0.3,
           autoAlpha: 1
-        })
+        }, '-=0.1')
     }
-    
+
     //rotate elemnets in svg
     rotateElements.forEach(el => {
       el.style.transform = 'scale(1.15)'
