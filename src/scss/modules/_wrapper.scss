@@ -5,13 +5,13 @@
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-rows:1fr;
-    gap: 20px;
+    gap: 25px;
     visibility: hidden;
 }
 
 #copyright{
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 @media screen and (max-width: 1480px){
@@ -29,6 +29,6 @@
 @media screen and (max-width: 900px){
     #wrapper{
         grid-template-rows:60px auto;
-        gap: 20px;
+        gap: 0;
     }
 }

@@ -8,12 +8,12 @@
 }
 
 .skills__container {
-    @include shadow-container;
+    @include shadow-box;
     @include flex-center;
     flex-direction: column;
     width: 100%;
     max-width: 1060px;
-    padding: 30px;
+    padding:50px 30px;
     border-radius: 15px;
     background-color: $backgroundColorContainer;
     border: $borderContainer;

@@ -14,10 +14,10 @@
 }
 
 .main-content {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     &:last-child {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 }
 
@@ -65,7 +65,7 @@
 
 @media screen and(max-width:500px) {
     .main-content {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
     
     .content__title {

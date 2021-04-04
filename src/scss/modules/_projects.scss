@@ -7,7 +7,7 @@
 }
 
 .project{
-    @include shadow-container;
+    @include shadow-box;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -30,12 +30,14 @@
     max-width: 1000px;
     border-radius: 15px;
     padding: 2.5%;
+    // background-color: #242a2f;
     border: $borderContainer;
     
     .project__img{
         @include flex-center;
         padding:0 5% 0 0;
         max-width: 100%;
+        height: 100%;
         overflow: hidden;
 
         img{

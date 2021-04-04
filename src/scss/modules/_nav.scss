@@ -27,10 +27,11 @@
     width: 100%;
     height: calc(95% / 4);
     margin-bottom: 10px;
-    background-color: $backgroundColorSection;
+    background-color: $backgroundColorContainer;
     color: $colorLight;
     font-family: 'Roboto Mono', monospace;
     border: 1px solid rgba(128, 128, 128, 0.1);;
+    border: $borderContainer;
     &:last-child {
         margin-bottom: 0;
         border-bottom: none;
