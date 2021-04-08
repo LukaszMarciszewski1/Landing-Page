@@ -13,7 +13,6 @@ export const animations = () => {
     const wrapper = document.getElementById('wrapper')
     const topHero = document.querySelector('.about-top__text-container')
     const heroTxt = document.querySelector('.about-bottom__txt-container');
-    const line = document.querySelector('.l1');
     const svgContainer = document.querySelector('.intro-container');
     const svg = document.querySelector('.intro-svg');
     const rec1 = document.getElementById('rectangle1');
@@ -30,7 +29,7 @@ export const animations = () => {
 
     //container svg
     if (window.innerWidth > 700) {
-      gsap.set([svgContainer, svg, heroTxt.children, line, topHero.children], {
+      gsap.set([svgContainer, svg, heroTxt.children, topHero.children], {
         autoAlpha: 0,
       })
 
@@ -62,21 +61,13 @@ export const animations = () => {
           ease: "none",
         })
         .fromTo(heroTxt.children, {
-            y: '-50',
-          }, {
-            y: "+=50",
-            stagger: 0.3,
-            duration: 0.5,
-            autoAlpha: 1
-          }, '-=0.5'
-        )
-        .fromTo(line, {
-          height: '0%',
+          y: '-50',
         }, {
-          height: '+=100%',
-          duration: 0.3,
+          y: "+=50",
+          stagger: 0.3,
+          duration: 0.5,
           autoAlpha: 1
-        }, '-=0.1')
+        }, '-=0.5')
     }
 
     //rotate elemnets in svg

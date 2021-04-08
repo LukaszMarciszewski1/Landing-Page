@@ -5,6 +5,7 @@ export const handleSubmit = (e) => {
     let message = document.getElementById('message').value.trim();
     const result = document.getElementById('result');
     const contactTxtValue = [...document.querySelectorAll('.contact-txt')];
+    const myEmailAdress = "https://formsubmit.co/ajax/f6fcc616522bf9c63486bd9118f68afa";
 
     const clearInputs = () => {
         setTimeout(() => {
@@ -13,7 +14,7 @@ export const handleSubmit = (e) => {
         }, 5000)
     }
 
-    fetch("https://formsubmit.co/ajax/f6fcc616522bf9c63486bd9118f68afa", {
+    fetch(myEmailAdress, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
