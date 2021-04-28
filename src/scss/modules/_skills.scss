@@ -12,7 +12,7 @@
     @include flex-center;
     flex-direction: column;
     width: 100%;
-    max-width: 1060px;
+    max-width: 1100px;
     padding:50px 30px;
     border-radius: 15px;
     background-color: $backgroundColorContainer;
@@ -28,18 +28,19 @@
 }
 
 .skills__title {
-    margin: 0 0 30px 40px;
+    margin: 0 0 20px 0;
     position: relative;
+    color: darken($colorTxt, 25%);
 
-    &::before {
-        content: '';
-        position: absolute;
-        border-top: 1px solid $colorTxt;
-        width: 25px;
-        left: -40px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     border-top: 1px solid $colorTxt;
+    //     width: 25px;
+    //     left: -40px;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    // }
 }
 
 .skills__items {
@@ -77,19 +78,19 @@
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1025px) {
     .skills__items {
         grid-template-columns: repeat(3, 1fr);
         gap: .7rem;
     }
 
-    .skills__item {
-        width: 170px;
-        height: 100px;
-    }
+    // .skills__item {
+    //     width: 170px;
+    //     height: 100px;
+    // }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
     .skills__item {
         width: 150px;
         height: 80px;

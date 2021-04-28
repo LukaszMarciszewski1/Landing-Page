@@ -12,11 +12,13 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    max-width: 1100px;
     padding: 30px;
     margin-bottom:4%;
     border-radius: 15px;
     background-color: $backgroundColorContainer;
     border: $borderContainer;
+    overflow: hidden;
     &:last-child{
         margin: 0;
     }
@@ -27,10 +29,8 @@
     @include shadow-container-img;
     height: 100%;
     width: 100%;
-    max-width: 1000px;
     border-radius: 15px;
     padding: 2.5%;
-    // background-color: #242a2f;
     border: $borderContainer;
     
     .project__img{
@@ -65,6 +65,12 @@
 
 .project__name{
     padding: 15px 0 0;
+}
+
+.project__text-tech{
+    padding: 10px 0;
+    color: darken($colorTxt, 12%);
+    border-bottom: 1px solid $colorLine;
 }
 
 .project__text{

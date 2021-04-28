@@ -9,7 +9,7 @@
   body{
     background-color: $backgroundColor;
     color: $colorLight;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-family: 'Roboto Mono', monospace;
     overflow-x: hidden;
   }
@@ -44,11 +44,11 @@ a{
 }
 
 .h1{
-  font-size: 1.7rem;
+  font-size: 3.5rem;
 }
 
 .h2{
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 .h3{
@@ -59,13 +59,20 @@ a{
   font-size: 1.1rem;
 }
 
+@media screen and(max-width:750px){
+  .h1{
+    font-size: 2.5rem;
+  }
+}
+
+
 @media screen and(max-width:500px){
   body{
     letter-spacing: 0.8px;
   }
 
   .h1{
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 
   .h2{

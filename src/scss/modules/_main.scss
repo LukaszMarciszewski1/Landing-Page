@@ -1,74 +1,74 @@
 .main {
-    grid-column: 1/2;
-    grid-row: 1/-1;
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: auto;
 }
 
 .main__container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: column;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: relative;
+	background-color: $backgroundColorSection;
+	flex-direction: column;
 }
 
 .main-content {
-    margin-bottom: 25px;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
+	margin-bottom: 25px;
+	position: relative;
+	z-index: 1;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .content__title {
-    position: relative;
-    margin-bottom: 5%;
+	position: relative;
+	margin-bottom: 3%;
 
-    &::before {
-        width: 50px;
-        @include title-section-line;
-        left: -80px
-    }
+	&::before {
+		width: 50px;
+		@include title-section-line;
+		left: -75px;
+	}
 
-    &::after{
-        width: 50px;
-        @include title-section-line;
-        right: -80px
-    }
+	&::after {
+		width: 50px;
+		@include title-section-line;
+		right: -75px;
+	}
 
-    @media screen and (max-width:700px){
-        .content__title {
-            &::before, 
-            &::after {
-                width: 50px
-            }
-            
-            &::before{
-                left: -70px
-            }
-            
-            &::after{
-                right: -70px
-            }
-        }
-    }
 }
 
-
 @media screen and (max-width: 900px) {
-    .main {
-        grid-column: 1/-1;
-        grid-row: 2/-1;
-    }
+	.main {
+		grid-column: 1/-1;
+		grid-row: 2/-1;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.content__title {
+		&::before,
+		&::after {
+			width: 50px;
+		}
+
+		&::before {
+			left: -70px;
+		}
+
+		&::after {
+			right: -70px;
+		}
+	}
 }
 
 @media screen and(max-width:500px) {
-    .main-content {
-        margin-bottom: 0;
-    }
-    
-    .content__title {
-        margin-bottom: 8%;
-    }
+	.main-content {
+		margin-bottom: 0;
+	}
+
+	.content__title {
+		margin-bottom: 8%;
+	}
 }
