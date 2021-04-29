@@ -32,25 +32,25 @@
     border-radius: 15px;
     padding: 2.5%;
     border: $borderContainer;
+}
     
-    .project__img{
-        @include flex-center;
-        padding:0 5% 0 0;
-        max-width: 100%;
-        height: 100%;
-        overflow: hidden;
+.project__img{
+    @include flex-center;
+    padding:0 5% 0 0;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
 
-        img{
-            width: 100%;
-            height: auto;
-            user-select: none;
-            display: block;
-            object-fit: cover;
-        }
+    img{
+        width: 100%;
+        height: auto;
+        user-select: none;
+        display: block;
+        object-fit: cover;
+    }
 
-        &:last-child{
-            padding:0 0 0 0
-        }
+    &:last-child{
+        padding:0 0 0 0
     }
 }
 
@@ -74,7 +74,7 @@
 }
 
 .project__text{
-    padding: 15px 0;
+    padding: 10px 0 15px;
     border-bottom: 1px solid $colorLine;
 }
 
@@ -132,7 +132,15 @@
 
 @media screen and(max-width:500px){
     .project{
-        padding:15px ;
-        margin-bottom: 6%;
+        padding:10px ;
+        margin-bottom: 10%;
+        border: none;
     }
+    .project__img{
+        padding: 0;
+    }
+    .project__img-mobile{
+        display: none;
+    }
+    
 }

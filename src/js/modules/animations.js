@@ -8,35 +8,44 @@ import {
 gsap.registerPlugin(ScrollTrigger);
 
 export const animations = () => {
-
   const animeHero = () => {
-    const wrapper = document.getElementById('wrapper')
-    const topHero = document.querySelector('.hero__text-container')
+    const rec1 = document.getElementById('rectangle1');
+    const rec2 = document.getElementById('rectangle2');
+    const rec3 = document.getElementById('rectangle3');
+    const out1 = document.getElementById('outline1');
+    const out2 = document.getElementById('outline2');
+    const out3 = document.getElementById('outline3');
+    const rotateElements = [rec1, rec2, rec3, out1, out2, out3];
 
-    gsap.set(wrapper, {
-      visibility: "visible"
-    })
-
-    //container svg
-    if (window.innerWidth > 750) {
-      gsap.set([topHero.children], {
+    rotateElements.forEach(el => {
+      gsap.set(el, {
         autoAlpha: 0,
       });
-
-      const tl = gsap.timeline({
-        defaults: {
-          ease: 'elastic.outout(1,0.3)'
-      }
+      gsap.to(el, {
+        autoAlpha: 1,
+        duration: 2,
+        stagger: 0.2,
+        delay: .6
       });
-      tl.fromTo(topHero.children, {y: "-30",}, {
-          y: "+=30",
-          delay: 0.3,
-          duration: 0.6,
-          stagger: 0.3,
-          ease: 'easeInOut',
-          autoAlpha: 1
-        })
-    }
+    });
+
+    // rotate elemnets in svg
+    rotateElements.forEach(el => {
+      const min = 15;
+      const max = 30;
+      const speed = () => Math.floor(Math.random() * (max - min) + min);
+      gsap.set(el, {
+        transformOrigin: "center",
+      });
+
+      gsap.to(el, {
+        rotation: 360,
+        duration: speed(),
+        ease: "none",
+        repeat: -1,
+        delay: .5
+      });
+    });
   }
 
   const animeSectionScroll = () => {
@@ -44,7 +53,6 @@ export const animations = () => {
     const sectionTitle = document.querySelectorAll('.content__title');
     const projectTxt = document.querySelectorAll('.project__text-container');
     if (window.innerWidth > 750) {
-
       //sections container
       sectionContent.forEach(item => {
         gsap.fromTo(item, {
@@ -66,13 +74,13 @@ export const animations = () => {
       //project txt
       projectTxt.forEach(item => {
         gsap.fromTo(item.children, {
-          y: '+=30',
+          y: '+=7',
           opacity: 0
         }, {
           y: 0,
           opacity: 1,
           stagger: 0.2,
-          duration: 0.5,
+          duration: 0.4,
           ease: 'easeInOut',
           scrollTrigger: {
             trigger: item.children,

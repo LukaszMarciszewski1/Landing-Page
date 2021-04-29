@@ -31,16 +31,6 @@
     margin: 0 0 20px 0;
     position: relative;
     color: darken($colorTxt, 25%);
-
-    // &::before {
-    //     content: '';
-    //     position: absolute;
-    //     border-top: 1px solid $colorTxt;
-    //     width: 25px;
-    //     left: -40px;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    // }
 }
 
 .skills__items {
@@ -83,11 +73,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: .7rem;
     }
-
-    // .skills__item {
-    //     width: 170px;
-    //     height: 100px;
-    // }
 }
 
 @media screen and (max-width: 720px) {
@@ -118,6 +103,7 @@
 @media screen and (max-width: 500px) {
     .skills__container {
         padding:20px 15px;
+        border: none;
     }
 
     .skills__items {

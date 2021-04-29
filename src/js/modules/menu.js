@@ -16,10 +16,10 @@ export const menu = () => {
 
         })
     }
-    
+
     const coloseMenu = () => {
         navItem.forEach(item => item.addEventListener('click', () => {
-            if(nav.classList.contains('nav__container--active')){}
+            if (nav.classList.contains('nav__container--active')) {}
             nav.classList.remove('nav__container--active');
             hamburgerBtn.classList.remove('hamburger--active');
         }))
@@ -27,18 +27,16 @@ export const menu = () => {
 
     //scroll nav ----------------->
     const navScroll = () => {
-		let prevScrollpos = window.pageYOffset;
-		window.addEventListener('scroll', ()=>{
-			let currentScrollPos = window.pageYOffset;
-
-			if(prevScrollpos < currentScrollPos){
-				nav.classList.add('nav--hide');
-			}else{
-				nav.classList.remove('nav--hide');
-			}
-
-			prevScrollpos = currentScrollPos;
-		})
+        let prevScrollpos = window.pageYOffset;
+        window.addEventListener('scroll', () => {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos < currentScrollPos) {
+                nav.classList.add('nav--hide');
+            } else {
+                nav.classList.remove('nav--hide');
+            }
+            prevScrollpos = currentScrollPos;
+        })
     }
     navScroll()
     openMenu();
