@@ -17,18 +17,6 @@ export const animations = () => {
     const out3 = document.getElementById('outline3');
     const rotateElements = [rec1, rec2, rec3, out1, out2, out3];
 
-    rotateElements.forEach(el => {
-      gsap.set(el, {
-        autoAlpha: 0,
-      });
-      gsap.to(el, {
-        autoAlpha: 1,
-        duration: 2,
-        stagger: 0.2,
-        delay: .6
-      });
-    });
-
     // rotate elemnets in svg
     rotateElements.forEach(el => {
       const min = 15;
