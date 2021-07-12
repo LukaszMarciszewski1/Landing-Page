@@ -1,9 +1,6 @@
 # Portfolio
 Portfolio Junior Front-end Developer Łukasz Marciszewski
 
-## Demo
-Here is a working live: https://lukasz-marciszewski.netlify.app/
-
 ## Description
 Single page website with mine (junior front-end developer) projects.
 
